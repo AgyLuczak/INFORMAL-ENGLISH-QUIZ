@@ -1,3 +1,14 @@
 body {
     background-color: rgb(137, 120, 143);
 }
+
+
+.message-container {
+    background-color: beige;
+}
+
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
