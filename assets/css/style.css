@@ -12,3 +12,7 @@ body {
     align-content: center;
     justify-content: space-evenly;
 }
+
+.instructions-container {
+    background-color: beige;
+}
