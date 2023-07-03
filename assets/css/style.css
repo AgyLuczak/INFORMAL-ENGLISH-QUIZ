@@ -23,17 +23,29 @@ body {
 
 .question-container {
     background-color: beige;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     max-width: 700px;
+    border-radius: 15px;
 
 }
 
 .answer-container {
     display: flex;
     background-color: coral;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     max-width: 700px;
+    border-radius: 15px;
 }
+
+.answer-container:hover {
+    color: #f8f9fa !important;
+    background-color: #67747e;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
 
 .scores {
     display: inline-block;
