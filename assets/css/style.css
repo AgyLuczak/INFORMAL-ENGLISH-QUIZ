@@ -12,6 +12,13 @@ body {
     justify-content: space-evenly;
 }
 
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rba (86, 185, 235, 0, 5);
+    transform: translateY (0.1 rem);
+    transition: transform 150ms;
+}
+
 .instructions-container {
     background-color: beige;
 }
