@@ -1,4 +1,4 @@
-body {
+:root {
     background-color: rgb(137, 120, 143);
 }
 
@@ -50,4 +50,10 @@ body {
 .scores {
     display: inline-block;
     padding: 25px;
+}
+
+#submit-form {
+    margin: 0 auto;
+    max-width: 60%;
+    padding-bottom: 20px;
 }
