@@ -43,15 +43,22 @@ body {
     border-radius: 15px;
 }
 
+
+/* --credit to Brian Design --*/
 .answer-container:hover {
-    color: #f8f9fa !important;
-    background-color: #67747e;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0 green;
+    transform: scale(1.02);
+    transform: transform 100ms;
 }
 
+.incorrect-answer {
+    background: red;
+}
+
+.correct-answer {
+    background: green;
+}
 
 .scores {
     display: inline-block;
