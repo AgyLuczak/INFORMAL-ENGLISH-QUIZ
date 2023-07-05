@@ -1,3 +1,7 @@
+const question = document.getElementById("question");
+const answers = Array.from(document.getElementsByClassName("answer-text"));
+console.log(answers);
+
 //  Questions and answer choices //
 
 let questions = [{
