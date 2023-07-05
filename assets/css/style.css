@@ -83,12 +83,6 @@ body {
 }
 
 
-
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
 #submit-form {
     margin: 0 auto;
     max-width: 60%;
