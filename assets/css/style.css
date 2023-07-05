@@ -24,6 +24,19 @@ body {
     background-color: beige;
 }
 
+#hud {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hud-prefix {
+    text-align: center;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
 .quiz-container {
     padding-top: 100px;
 }
@@ -68,6 +81,8 @@ body {
 .correct-answer {
     background: green;
 }
+
+
 
 .scores {
     display: inline-block;
