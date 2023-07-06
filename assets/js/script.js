@@ -18,3 +18,10 @@ function displayQuestion() {
     option3.innerHTML = questions[q].choice3
     option4.innerHTML = questions[q].choice4
 }
+
+nextBtn.addEventListener('click', function () {
+    q++;
+    displayQuestion();
+})
+
+displayQuestions()
