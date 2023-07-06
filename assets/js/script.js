@@ -1,21 +1,19 @@
-// const question = document.getElementById("question");
-// const answers = Array.from(document.getElementsByClassName("answer-text"));
-// console.log(answers);
-// let currentQuestion = {};
-// let correctAnswers = true;
-// let availableQuestions = [];
-// const scorePoints = 100;
-// const maxQuestions = 10;
+const questionText = document.getElementById("question-text");
+const option1 = document.getElementById('a')
+const option2 = document.getElementById('b')
+const option3 = document.getElementById('c')
+const option4 = document.getElementById('d')
 
-
-
-console.log("Questions", questions)
 
 function displayQuestions() {
-
+    console.log(questions.length)
+    // add the value of each question to the questionText tag
     for (let i = 0; i < questions.length; i++) {
-        console.log(questions[i])
+        questionText.innerHTML = questions[i].question
+        option1.innerHTML = questions[i].choice1
+        option2.innerHTML = questions[i].choice2
+        option3.innerHTML = questions[i].choice3
+        option4.innerHTML = questions[i].choice4
     }
 }
-
 displayQuestions()
