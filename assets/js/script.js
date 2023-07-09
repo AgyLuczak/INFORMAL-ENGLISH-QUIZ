@@ -4,6 +4,7 @@ const option2 = document.getElementById('b')
 const option3 = document.getElementById('c')
 const option4 = document.getElementById('d')
 const nextBtn = document.getElementById('next-btn')
+let runningQuestion = 0
 
 // to keep track of question number
 var q = 0
@@ -25,3 +26,11 @@ nextBtn.addEventListener('click', function () {
 })
 
 displayQuestion()
+
+function answerIsCorrect() {
+    document.getElementById(runningQuestion).style.backgroundfColor = green;
+}
+
+function answerIsWrong() {
+    document.getElementById(runningQuestion).style.backgroundColor = red;
+}
