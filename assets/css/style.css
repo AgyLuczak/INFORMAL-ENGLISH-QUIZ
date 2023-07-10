@@ -68,9 +68,9 @@ body {
 /* --credit to Brian Design --*/
 .answer-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 0 rgb(6, 0, 128);
+    box-shadow: 0 0.4rem 0.4rem 0 rgb(6, 0, 128);
     transform: scale(1.02);
-    transform: transform 100ms;
+    transition: transform 100ms;
 }
 
 
