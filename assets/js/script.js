@@ -5,6 +5,7 @@ const option3 = document.getElementById('c')
 const option4 = document.getElementById('d')
 const nextBtn = document.getElementById('next-btn')
 let runningQuestion = 0
+let score = 0
 
 // to keep track of question number
 var q = 0
@@ -28,7 +29,7 @@ nextBtn.addEventListener('click', function () {
 displayQuestion()
 
 function answerIsCorrect() {
-    document.getElementById(runningQuestion).style.backgroundfColor = green;
+    document.getElementById(runningQuestion).style.backgroundColor = green;
 }
 
 function answerIsWrong(option) {
@@ -38,8 +39,20 @@ function answerIsWrong(option) {
 function checkAnswer(selected_answer) {
 
     if (selected_answer === questions[q].answer) {
-        document.getElementById(selected_answer).style.backgroundColor = 'green';
+        document.getElementById(selected_answer).parentNode.style.backgroundColor = 'green';
     } else {
-        document.getElementById(selected_answer).style.backgroundColor = 'red';
+        document.getElementById(selected_answer).parentNode.style.backgroundColor = 'red';
+    }
+}
+
+
+function addScore(selected_answer) {
+    if (selected_answer === questions[q].answer) {
+        answerIsCorrect(selected_answer);
+        document.getElementById('scoreCounter').innerHTML = score + 1;
+        score++;
+    } else {
+        answerIsWrong(selected_answer);
+
     }
 }
