@@ -31,6 +31,15 @@ function answerIsCorrect() {
     document.getElementById(runningQuestion).style.backgroundfColor = green;
 }
 
-function answerIsWrong() {
+function answerIsWrong(option) {
     document.getElementById(runningQuestion).style.backgroundColor = red;
+}
+
+function checkAnswer(selected_answer) {
+
+    if (selected_answer === questions[q].answer) {
+        document.getElementById(selected_answer).style.backgroundColor = 'green';
+    } else {
+        document.getElementById(selected_answer).style.backgroundColor = 'red';
+    }
 }
