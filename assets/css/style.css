@@ -54,7 +54,6 @@ body {
     display: flex;
     background-color: coral;
     margin-bottom: 30px;
-    max-width: 700px;
     border-radius: 15px;
 }
 
@@ -74,13 +73,6 @@ body {
     transform: transform 100ms;
 }
 
-.incorrect-answer {
-    background: red;
-}
-
-.correct-answer {
-    background: green;
-}
 
 
 #submit-form {
