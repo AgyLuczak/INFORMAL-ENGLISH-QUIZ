@@ -13,11 +13,32 @@ body {
     justify-content: space-evenly;
 }
 
-.btn:hover {
+.btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #745cc1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rba (86, 185, 235, 0, 5);
-    transform: translateY (0.1 rem);
-    transition: transform 150ms;
+    transition: background-color 0.5s ease;
+
+}
+
+.btn:hover {
+    background-color: #71626e;
+
+}
+
+.btn:focus {
+    outline: none;
+
+}
+
+.btn:active {
+    background-color: #761a37;
+
 }
 
 .instructions-container {
