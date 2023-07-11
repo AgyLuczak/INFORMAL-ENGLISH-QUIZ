@@ -76,6 +76,6 @@ let questions = [{
         choice2: "Are you in trouble?",
         choice3: "How much money do you owe?",
         choice4: "What are you doing right now?",
-        answer: 'b'
+        answer: 'd'
     }
 ];
