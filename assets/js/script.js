@@ -28,31 +28,13 @@ nextBtn.addEventListener('click', function () {
 
 displayQuestion()
 
-function answerIsCorrect() {
-    document.getElementById(runningQuestion).style.backgroundColor = green;
-}
-
-function answerIsWrong(option) {
-    document.getElementById(runningQuestion).style.backgroundColor = red;
-}
-
 function checkAnswer(selected_answer) {
 
     if (selected_answer === questions[q].answer) {
         document.getElementById(selected_answer).parentNode.style.backgroundColor = 'green';
+        score++;
+        console.log(score);
     } else {
         document.getElementById(selected_answer).parentNode.style.backgroundColor = 'red';
-    }
-}
-
-
-function addScore(selected_answer) {
-    if (selected_answer === questions[q].answer) {
-        answerIsCorrect(selected_answer);
-        document.getElementById('scoreCounter').innerHTML = score + 1;
-        score++;
-    } else {
-        answerIsWrong(selected_answer);
-
     }
 }
