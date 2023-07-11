@@ -2,10 +2,15 @@
 
 
 body {
-    background-color: rgb(137, 120, 143);
+    background: #390C37;
+    background: -moz-linear-gradient(left, #390C37 0%, #6F39A4 33%, #F379E1 100%);
+    background: -webkit-linear-gradient(left, #390C37 0%, #6F39A4 33%, #F379E1 100%);
+    background: linear-gradient(to right, #390C37 0%, #6F39A4 33%, #F379E1 100%);
+    /*background-color: rgb(137, 120, 143);*/
     font-family: Signika;
     font-weight: 700;
     font-size: x-large;
+    color: wheat;
 }
 
 
@@ -17,7 +22,7 @@ h1 {
 }
 
 .message-container {
-    background-color: beige;
+    background-color: #4d35bf;
 }
 
 .buttons {
@@ -32,7 +37,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    background-color: #745cc1;
+    background-color: #0d6efd;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -43,7 +48,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #71626e;
+    background-color: #6c7bb1;
     cursor: pointer;
     box-shadow: 0 0.4rem 0.4rem 0 rgb(6, 0, 128);
     transform: scale(1.02);
@@ -57,12 +62,12 @@ h1 {
 }
 
 .btn:active {
-    background-color: #761a37;
+    background-color: #483e92;
 
 }
 
 .instructions-container {
-    background-color: beige;
+    background-color: #4d35bf;
 }
 
 #hud {
@@ -83,7 +88,7 @@ h1 {
 }
 
 .question-container {
-    background-color: beige;
+    background-color: #4d35bf;
     margin-bottom: 30px;
     border-radius: 15px;
     padding: 30px;
