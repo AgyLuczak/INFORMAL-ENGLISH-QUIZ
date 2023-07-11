@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Signika:wght@300;400;500;600;700&display=swap');
+
+
 body {
     background-color: rgb(137, 120, 143);
+    font-family: Signika;
+    font-weight: 700;
+    font-size: x-large;
+}
 
+
+
+h1 {
+    font-size: xxx-large;
+    font-weight: 700;
+    text-shadow: 7px 3px 3px #6641C3;
 }
 
 .message-container {
