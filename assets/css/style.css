@@ -21,9 +21,16 @@ h1 {
     text-shadow: 7px 3px 3px #6641C3;
 }
 
-.message-container {
+h2 {
+    font-weight: 700;
+    text-shadow: 7px 3px 3px #6641C3;
+}
+
+/* .message-container { 
     background-color: #4d35bf;
 }
+
+*/
 
 .buttons {
     display: flex;
@@ -100,6 +107,7 @@ h1 {
     background-color: coral;
     margin-bottom: 30px;
     border-radius: 15px;
+    color: darkblue;
 }
 
 .answer-text {
