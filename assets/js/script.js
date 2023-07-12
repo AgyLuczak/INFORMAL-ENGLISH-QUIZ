@@ -10,6 +10,7 @@ let score = 0
 
 // to keep track of question number
 var q = 0
+clicked = {};
 
 function displayQuestion(clicked_option = "") {
     console.log(questions.length)
@@ -30,21 +31,39 @@ function displayQuestion(clicked_option = "") {
 
 displayQuestion()
 
+function disableOptions() {
+    let options = document.getElementsByClassName('answer-container')
+    for (let i = 0; i < options.length; i++) {
+        options[i].disabled = true;
+    }
+}
+
 function checkAnswer(selected_answer) {
+    clickedQuestion = document.getElementById('question-text').innerHTML
+    if (clickedQuestion in clicked) {
+        clicked[clickedQuestion] += 1
+    } else {
+        clicked[clickedQuestion] = 1;
+    }
+    console.log(clicked);
+    console.log("Question Number: ", q);
     clicked_option = document.getElementById(selected_answer).parentNode
-    if (selected_answer === questions[q].answer) {
+    if (selected_answer === questions[q].answer && clicked[clickedQuestion] === 1) {
+
         clicked_option.style.backgroundColor = 'green';
         score++;
         console.log("Score: ", score);
         scoreCounter.innerHTML = score;
-    } else {
+    } else if (clicked[q] === 1) {
         clicked_option.style.backgroundColor = 'red';
+
     }
-    q++;
+    if (clicked[clickedQuestion] === 1) {
+        q++;
+    }
+
     setTimeout(function () {
         displayQuestion(clicked_option);
+
     }, 2000)
-
-
-
 }
