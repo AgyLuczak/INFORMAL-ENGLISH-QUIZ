@@ -4,9 +4,10 @@ const option2 = document.getElementById('b')
 const option3 = document.getElementById('c')
 const option4 = document.getElementById('d')
 const nextBtn = document.getElementById('next-btn')
+const scoreCounter = document.getElementById('scoreCounter');
 let runningQuestion = 0
 let score = 0
-console.log("Agy is AWESOME");
+
 // to keep track of question number
 var q = 0
 
@@ -35,7 +36,7 @@ function checkAnswer(selected_answer) {
         clicked_option.style.backgroundColor = 'green';
         score++;
         console.log("Score: ", score);
-
+        scoreCounter.innerHTML = score;
     } else {
         clicked_option.style.backgroundColor = 'red';
     }
