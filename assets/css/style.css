@@ -13,7 +13,18 @@ body {
     color: wheat;
 }
 
+.navbar {
+    background: #390C37;
+    background: -moz-linear-gradient(left, #390C37 0%, #6F39A4 33%, #F379E1 100%);
+    background: -webkit-linear-gradient(left, #390C37 0%, #6F39A4 33%, #F379E1 100%);
+    background: linear-gradient(to right, #390C37 0%, #6F39A4 33%, #F379E1 100%);
 
+
+}
+
+.nav-link {
+    color: wheat;
+}
 
 h1 {
     font-size: xxx-large;
@@ -26,11 +37,11 @@ h2 {
     text-shadow: 7px 3px 3px #6641C3;
 }
 
-/* .message-container { 
+.message-container {
     background-color: #4d35bf;
 }
 
-*/
+
 
 .buttons {
     display: flex;
