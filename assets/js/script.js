@@ -15,6 +15,13 @@ clicked = {};
 function displayQuestion(clicked_option = "") {
     console.log(questions.length)
     // add the value of each question to the questionText tag
+    let all_options = document.getElementsByClassName('answer-container');
+
+    for (let i = 0; i < all_options.length; i++) {
+        console.log(all_options[i]);
+        all_options[i].style.backgroundColor = 'coral';
+    }
+
     if (clicked_option != "") {
         clicked_option.style.backgroundColor = ""
     }
@@ -48,13 +55,14 @@ function checkAnswer(selected_answer) {
     console.log(clicked);
     console.log("Question Number: ", q);
     clicked_option = document.getElementById(selected_answer).parentNode
-    if (selected_answer === questions[q].answer && clicked[clickedQuestion] === 1) {
+    console.log("clicked[clickedQuestion]", clicked[clickedQuestion]);
+    if (selected_answer === questions[q].answer && clicked[clickedQuestion] == 1) {
 
         clicked_option.style.backgroundColor = 'green';
         score++;
         console.log("Score: ", score);
         scoreCounter.innerHTML = score;
-    } else if (clicked[q] === 1) {
+    } else if (selected_answer != questions[q].answer && clicked[clickedQuestion] == 1) {
         clicked_option.style.backgroundColor = 'red';
 
     }
