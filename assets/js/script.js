@@ -5,6 +5,7 @@ const option3 = document.getElementById('c')
 const option4 = document.getElementById('d')
 const nextBtn = document.getElementById('next-btn')
 const scoreCounter = document.getElementById('scoreCounter');
+const questionNumber = document.getElementById('questionCounter');
 let runningQuestion = 0
 let score = 0
 
@@ -13,12 +14,10 @@ var q = 0
 clicked = {};
 
 function displayQuestion() {
-    console.log(questions.length)
+    questionNumber.innerHTML = q + 1 + "/10"
     // add the value of each question to the questionText tag
     let all_options = document.getElementsByClassName('answer-container');
-
     for (let i = 0; i < all_options.length; i++) {
-        console.log(all_options[i]);
         all_options[i].style.backgroundColor = 'coral';
     }
     questionText.innerHTML = questions[q].question
@@ -65,12 +64,11 @@ function checkAnswer(selected_answer) {
     }
     if (clicked[clickedQuestion] === 1) {
         q++;
+
     }
 
     setTimeout(function () {
         if (q < questions.length)
             displayQuestion();
-
-
     }, 1000)
 }
