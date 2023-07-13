@@ -12,7 +12,7 @@ let score = 0
 var q = 0
 clicked = {};
 
-function displayQuestion(clicked_option = "") {
+function displayQuestion() {
     console.log(questions.length)
     // add the value of each question to the questionText tag
     let all_options = document.getElementsByClassName('answer-container');
@@ -20,10 +20,6 @@ function displayQuestion(clicked_option = "") {
     for (let i = 0; i < all_options.length; i++) {
         console.log(all_options[i]);
         all_options[i].style.backgroundColor = 'coral';
-    }
-
-    if (clicked_option != "") {
-        clicked_option.style.backgroundColor = ""
     }
     questionText.innerHTML = questions[q].question
     option1.innerHTML = questions[q].choice1
@@ -35,8 +31,9 @@ function displayQuestion(clicked_option = "") {
 // nextBtn.addEventListener('click', function () {
 
 // })
-
-displayQuestion()
+if (questions.length > 0) {
+    displayQuestion()
+}
 
 function disableOptions() {
     let options = document.getElementsByClassName('answer-container')
@@ -71,7 +68,9 @@ function checkAnswer(selected_answer) {
     }
 
     setTimeout(function () {
-        displayQuestion(clicked_option);
+        if (q < questions.length)
+            displayQuestion();
 
-    }, 2000)
+
+    }, 1000)
 }
