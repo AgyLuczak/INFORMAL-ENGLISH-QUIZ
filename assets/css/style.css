@@ -26,6 +26,21 @@ body {
     color: wheat;
 }
 
+.navbar-nav .nav-link.active {
+    color: rgb(22 24 189);
+}
+
+
+.navbar-toggler-icon {
+    color: #390C37;
+    background-color: wheat;
+    border-color: #390C37;
+
+}
+
+
+
+
 h1 {
     font-size: xxx-large;
     font-weight: 700;
