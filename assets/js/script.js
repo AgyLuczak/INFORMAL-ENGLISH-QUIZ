@@ -1,10 +1,11 @@
 const questionText = document.getElementById("question-text");
-const option1 = document.getElementById('a')
-const option2 = document.getElementById('b')
-const option3 = document.getElementById('c')
-const option4 = document.getElementById('d')
+const option1 = document.getElementById('a');
+const option2 = document.getElementById('b');
+const option3 = document.getElementById('c');
+const option4 = document.getElementById('d');
 const scoreCounter = document.getElementById('scoreCounter');
 const questionNumber = document.getElementById('questionCounter');
+const answerContainers = document.getElementsByClassName('answer-container');
 let runningQuestion = 0
 let score = 0
 
@@ -28,17 +29,21 @@ var q = 0
 clicked = {};
 
 function displayQuestion() {
-    questionNumber.innerHTML = `${q + 1}/10`
-    // add the value of each question to the questionText tag
-    let all_options = document.getElementsByClassName('answer-container');
-    for (let i = 0; i < all_options.length; i++) {
-        all_options[i].style.backgroundColor = 'coral';
+    try {
+        questionNumber.innerHTML = `${q + 1}/10`
+        // add the value of each question to the questionText tag
+        let all_options = document.getElementsByClassName('answer-container');
+        for (let i = 0; i < all_options.length; i++) {
+            all_options[i].style.backgroundColor = 'coral';
+        }
+        questionText.innerHTML = questions[q].question
+        option1.innerHTML = questions[q].choice1
+        option2.innerHTML = questions[q].choice2
+        option3.innerHTML = questions[q].choice3
+        option4.innerHTML = questions[q].choice4
+    } catch (error) {
+        console.error("An error occurred while displaying the question", error);
     }
-    questionText.innerHTML = questions[q].question
-    option1.innerHTML = questions[q].choice1
-    option2.innerHTML = questions[q].choice2
-    option3.innerHTML = questions[q].choice3
-    option4.innerHTML = questions[q].choice4
 }
 
 
