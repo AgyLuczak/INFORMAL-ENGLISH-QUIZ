@@ -9,12 +9,27 @@ const questionNumber = document.getElementById('questionCounter');
 let runningQuestion = 0
 let score = 0
 
+// Add click event listener
+option1.addEventListener('click', function () {
+    checkAnswer('a');
+});
+option2.addEventListener('click', function () {
+    checkAnswer('b');
+});
+option3.addEventListener('click', function () {
+    checkAnswer('c');
+});
+option4.addEventListener('click', function () {
+    checkAnswer('d');
+});
+
+
 // to keep track of question number
 var q = 0
 clicked = {};
 
 function displayQuestion() {
-    questionNumber.innerHTML = q + 1 + "/10"
+    questionNumber.innerHTML = `${q + 1}/10`
     // add the value of each question to the questionText tag
     let all_options = document.getElementsByClassName('answer-container');
     for (let i = 0; i < all_options.length; i++) {
