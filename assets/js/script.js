@@ -3,13 +3,12 @@ const option1 = document.getElementById('a')
 const option2 = document.getElementById('b')
 const option3 = document.getElementById('c')
 const option4 = document.getElementById('d')
-const nextBtn = document.getElementById('next-btn')
 const scoreCounter = document.getElementById('scoreCounter');
 const questionNumber = document.getElementById('questionCounter');
 let runningQuestion = 0
 let score = 0
 
-// Add click event listener
+// Add event listener to each option that listens for a click event. Call checkAnswer function
 option1.addEventListener('click', function () {
     checkAnswer('a');
 });
@@ -42,9 +41,7 @@ function displayQuestion() {
     option4.innerHTML = questions[q].choice4
 }
 
-// nextBtn.addEventListener('click', function () {
 
-// })
 if (questions.length > 0) {
     displayQuestion()
 }
