@@ -24,12 +24,22 @@ body {
 
 .nav-link {
     color: wheat;
+    font-weight: 700;
+    text-shadow: 7px 3px 3px #6641C3;
 }
 
 .navbar-nav .nav-link.active {
-    color: rgb(22 24 189);
+    color: white;
 }
 
+.nav-link:hover {
+    color: #f8f9fa;
+    background-color: #6641C3;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
 
 .navbar-toggler-icon {
     color: #390C37;
