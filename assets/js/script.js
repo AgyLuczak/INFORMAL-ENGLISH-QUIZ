@@ -9,20 +9,6 @@ const answerContainers = document.getElementsByClassName('answer-container');
 let runningQuestion = 0
 let score = 0
 
-// Add event listener to each option that listens for a click event. Call checkAnswer function
-option1.addEventListener('click', function () {
-    checkAnswer('a');
-});
-option2.addEventListener('click', function () {
-    checkAnswer('b');
-});
-option3.addEventListener('click', function () {
-    checkAnswer('c');
-});
-option4.addEventListener('click', function () {
-    checkAnswer('d');
-});
-
 
 // to keep track of question number
 var q = 0
