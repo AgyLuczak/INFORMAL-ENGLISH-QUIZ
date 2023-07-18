@@ -116,6 +116,7 @@ h2 {
 #hud {
     display: flex;
     justify-content: space-around;
+    padding-top: 50px;
 }
 
 .hud-prefix {
@@ -127,7 +128,7 @@ h2 {
 }
 
 .quiz-container {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .question-container {
