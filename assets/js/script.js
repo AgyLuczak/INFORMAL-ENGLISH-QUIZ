@@ -9,6 +9,18 @@ const answerContainers = document.getElementsByClassName('answer-container');
 let runningQuestion = 0
 let score = 0
 
+//Shuffle the questions
+function shuffleQuestions(quests) {
+    for (let i = quests.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        // Swapping values with random index
+        [quests[i], quests[j]] = [quests[j], quests[i]]
+    };
+    return quests
+}
+
+questions = shuffleQuestions(questions)
+
 
 // to keep track of question number
 var q = 0
