@@ -7,6 +7,7 @@ const scoreCounter = document.getElementById('scoreCounter');
 const questionNumber = document.getElementById('questionCounter');
 const endScreen = document.getElementById('end-screen')
 const quizContainer = document.getElementById('quiz-container')
+const submitBtn = document.getElementById('submit-btn')
 
 let runningQuestion = 0
 let score = 0
@@ -65,8 +66,6 @@ function endQuiz() {
     quizContainer.classList.add("hide");
     console.log("Removing hide class from end screens");
     endScreen.classList.remove("hide");
-
-
 }
 
 function checkAnswer(selected_answer) {
@@ -105,6 +104,20 @@ function checkAnswer(selected_answer) {
             displayQuestion();
         }
     }, 1000)
-
-
 }
+
+function saveScore(newScore) {
+    localStorage.setItem('entry', JSON.stringify(newScore))
+}
+
+
+submitBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    const playerName = document.getElementById('fullname').value.trim();
+    let newScore = {
+        player: playerName,
+        score: score
+    }
+    console.log(newScore);
+    saveScore(newScore)
+})
