@@ -49,34 +49,36 @@
             </h1>
         </div>
     </div>
-    <div class="quiz-container container-fluid">
-        <div class="row justify-content-center quiz-card">
-            <div class="col-sm-12 col-md-12 col-lg-6 text-center">
-                <div id="quiz" class="justify-content-center mx-2 mx-md-4">
+    <div id="quiz-container">
+        <div class="container-fluid">
+            <div class="row justify-content-center quiz-card">
+                <div class="col-sm-12 col-md-12 col-lg-6 text-center">
+                    <div id="quiz" class="justify-content-center mx-2 mx-md-4">
 
-                    <div class="row justify-content-center">
-                        <div class="question-container" id="question-text"></div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="answer-container" onclick="checkAnswer('a')">
-                            <p class="answer-choice"> A </p>
-                            <p class="answer-text" id="a"></p>
+                        <div class="row justify-content-center">
+                            <div class="question-container" id="question-text"></div>
                         </div>
-                        <div class="answer-container" onclick="checkAnswer('b')">
-                            <p class="answer-choice"> B </p>
-                            <p class="answer-text" id="b"></p>
-                        </div>
-                        <div class="answer-container" onclick="checkAnswer('c')">
-                            <p class="answer-choice"> C </p>
-                            <p class="answer-text" id="c"></p>
-                        </div>
-                        <div class="answer-container" onclick="checkAnswer('d')">
-                            <p class="answer-choice"> D </p>
-                            <p class="answer-text" id="d"></p>
-                        </div>
-                        <div class="buttons text-center mb-2">
-                            <a href="instructions.html" class="btn" role="button">Instructions</a>
-                            <a href="index.html" class="btn" role="button">Home</a>
+                        <div class="row justify-content-center">
+                            <div class="answer-container" onclick="checkAnswer('a')">
+                                <p class="answer-choice"> A </p>
+                                <p class="answer-text" id="a"></p>
+                            </div>
+                            <div class="answer-container" onclick="checkAnswer('b')">
+                                <p class="answer-choice"> B </p>
+                                <p class="answer-text" id="b"></p>
+                            </div>
+                            <div class="answer-container" onclick="checkAnswer('c')">
+                                <p class="answer-choice"> C </p>
+                                <p class="answer-text" id="c"></p>
+                            </div>
+                            <div class="answer-container" onclick="checkAnswer('d')">
+                                <p class="answer-choice"> D </p>
+                                <p class="answer-text" id="d"></p>
+                            </div>
+                            <div class="buttons text-center mb-2">
+                                <a href="instructions.html" class="btn" role="button">Instructions</a>
+                                <a href="index.html" class="btn" role="button">Home</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +88,8 @@
 
 
 
-    <div class="end-screen hide">
+
+    <div class="hide" id="end-screen">
         <section class="your-score">
             <div class="container-fluid my-5">
                 <div class="row justify-content-center">
