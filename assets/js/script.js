@@ -5,13 +5,13 @@ const option3 = document.getElementById('c');
 const option4 = document.getElementById('d');
 const scoreCounter = document.getElementById('scoreCounter');
 const questionNumber = document.getElementById('questionCounter');
-const endScreen = document.getElementById('end-screen')
-const quizContainer = document.getElementById('quiz-container')
-const submitBtn = document.getElementById('submit-btn')
+const endScreen = document.getElementById('end-screen');
+const quizContainer = document.getElementById('quiz-container');
+const submitBtn = document.getElementById('submit-btn');
 
 let runningQuestion = 0
 let score = 0
-
+let scoreList = []
 //Shuffle the questions
 function shuffleQuestions(quests) {
     for (let i = quests.length - 1; i > 0; i--) {
@@ -108,7 +108,21 @@ function checkAnswer(selected_answer) {
 
 function saveScore(newScore) {
     localStorage.setItem('entry', JSON.stringify(newScore))
+    let scoreList = JSON.parse(localStorage.getItem("highscore"))
+    let entry = JSON.parse(localStorage.getItem("entry"))
+    if (scoreList == null) {
+        scoreList = []
+        scoreList.push(entry);
+        localStorage.setItem('highscore', JSON.stringify(scoreList))
+    } else {
+        scoreList.push(entry);
+        localStorage.setItem('highscore', JSON.stringify(scoreList))
+    }
+    console.log("New Score List: ", scoreList);
 }
+
+
+
 
 
 submitBtn.addEventListener('click', function (event) {
@@ -120,4 +134,5 @@ submitBtn.addEventListener('click', function (event) {
     }
     console.log(newScore);
     saveScore(newScore)
+    window.open('scores.html')
 })
