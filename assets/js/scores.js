@@ -8,3 +8,16 @@ function getScores() {
     }
     return []
 }
+
+function orderedScores() {
+    var scoreList = getScores();
+    scoreList.sort(function (a, b) {
+        return a.score - b.score;
+    });
+    scoreList.reverse();
+    var topTenScores = scoreList.slice(0, 10);
+    console.log(topTenScores);
+    createLeaderBoard(topTenScores);
+}
+
+orderedScores();
