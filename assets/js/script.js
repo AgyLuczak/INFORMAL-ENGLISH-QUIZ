@@ -5,7 +5,9 @@ const option3 = document.getElementById('c');
 const option4 = document.getElementById('d');
 const scoreCounter = document.getElementById('scoreCounter');
 const questionNumber = document.getElementById('questionCounter');
-const answerContainers = document.getElementsByClassName('answer-container');
+const endScreen = document.getElementById('end-screen')
+const quizContainer = document.getElementById('quiz-container')
+
 let runningQuestion = 0
 let score = 0
 
@@ -42,6 +44,7 @@ function displayQuestion() {
     } catch (error) {
         console.error("An error occurred while displaying the question", error);
     }
+
 }
 
 
@@ -54,6 +57,16 @@ function disableOptions() {
     for (let i = 0; i < options.length; i++) {
         options[i].disabled = true;
     }
+}
+
+function endQuiz() {
+    console.log("Adding hide class to quiz container");
+    console.log(quizContainer);
+    quizContainer.classList.add("hide");
+    console.log("Removing hide class from end screens");
+    endScreen.classList.remove("hide");
+
+
 }
 
 function checkAnswer(selected_answer) {
@@ -81,9 +94,17 @@ function checkAnswer(selected_answer) {
         q++;
 
     }
-
+    console.log("Q: ", q, "Questions.length: ", questions.length)
+    if (q == questions.length) {
+        endQuiz()
+        return;
+    }
     setTimeout(function () {
-        if (q < questions.length)
+
+        if (q < questions.length) {
             displayQuestion();
+        }
     }, 1000)
+
+
 }
