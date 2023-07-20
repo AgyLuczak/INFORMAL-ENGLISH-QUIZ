@@ -20,4 +20,14 @@ function orderedScores() {
     createLeaderBoard(topTenScores);
 }
 
+function createLeaderBoard(topTenScores) {
+    topTenScores.forEach(element => {
+        scoreElement = document.createElement('div')
+        scoreElement.innerText = element.player + " - " + element.score
+        highscores.append(scoreElement)
+    });
+
+}
+
+
 orderedScores();
