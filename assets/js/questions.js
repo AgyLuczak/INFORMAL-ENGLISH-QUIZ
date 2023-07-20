@@ -47,7 +47,7 @@ let questions = [{
         answer: 'a'
     },
     {
-        question: "Are yoy taking the mickey?",
+        question: "Are you taking the mickey?",
         choice1: "Are you taking it seriously?",
         choice2: "Do you like Mickey Mouse?",
         choice3: "Are you joking?",
