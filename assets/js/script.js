@@ -9,42 +9,41 @@ const endScreen = document.getElementById('end-screen');
 const quizContainer = document.getElementById('quiz-container');
 const submitBtn = document.getElementById('submit-btn');
 
-let runningQuestion = 0
-let score = 0
-let scoreList = []
+let runningQuestion = 0;
+let score = 0;
+let scoreList = [];
 //Shuffle the questions
 function shuffleQuestions(quests) {
     for (let i = quests.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         // Swapping values with random index
-        [quests[i], quests[j]] = [quests[j], quests[i]]
+        [quests[i], quests[j]] = [quests[j], quests[i]];
     };
-    return quests
+    return quests;
 }
 
-questions = shuffleQuestions(questions)
+questions = shuffleQuestions(questions);
 
 // to keep track of question number
-var q = 0
+var q = 0;
 clicked = {};
 
 function displayQuestion() {
     try {
-        questionNumber.innerHTML = `${q + 1}/10`
+        questionNumber.innerHTML = `${q + 1}/10`;
         // add the value of each question to the questionText tag
         let all_options = document.getElementsByClassName('answer-container');
-        options_array = [questions[q].choice1, questions[q].choice2, questions[q].choice3, questions[q].choice4]
-        console.log("Options Array: ", options_array);
-        shuffled_options = shuffleQuestions(options_array)
-        console.log("Shuffled options:", shuffled_options);
+        options_array = [questions[q].choice1, questions[q].choice2, questions[q].choice3, questions[q].choice4];
+        shuffled_options = shuffleQuestions(options_array);
+
         for (let i = 0; i < all_options.length; i++) {
             all_options[i].style.backgroundColor = 'coral';
         }
-        questionText.innerHTML = questions[q].question
-        option1.innerHTML = shuffled_options[0]
-        option2.innerHTML = shuffled_options[1]
-        option3.innerHTML = shuffled_options[2]
-        option4.innerHTML = shuffled_options[3]
+        questionText.innerHTML = questions[q].question;
+        option1.innerHTML = shuffled_options[0];
+        option2.innerHTML = shuffled_options[1];
+        option3.innerHTML = shuffled_options[2];
+        option4.innerHTML = shuffled_options[3];
     } catch (error) {
         console.error("An error occurred while displaying the question", error);
     }
@@ -53,37 +52,33 @@ function displayQuestion() {
 
 
 if (questions.length > 0) {
-    displayQuestion()
+    displayQuestion();
 }
 
 function disableOptions() {
-    let options = document.getElementsByClassName('answer-container')
+    let options = document.getElementsByClassName('answer-container');
     for (let i = 0; i < options.length; i++) {
         options[i].disabled = true;
     }
 }
 
 function endQuiz() {
-    console.log("Adding hide class to quiz container");
-    console.log(quizContainer);
     quizContainer.classList.add("hide");
-    console.log("Removing hide class from end screens");
+
     endScreen.classList.remove("hide");
 }
 
 function checkAnswer(selected_answer) {
-    clickedQuestion = document.getElementById('question-text').innerHTML
+    clickedQuestion = document.getElementById('question-text').innerHTML;
     if (clickedQuestion in clicked) {
-        clicked[clickedQuestion] += 1
+        clicked[clickedQuestion] += 1;
     } else {
         clicked[clickedQuestion] = 1;
     }
-    console.log(clicked);
-    console.log("Question Number: ", q);
-    clicked_option = document.getElementById(selected_answer).parentNode
-    console.log("clicked[clickedQuestion]", clicked[clickedQuestion]);
+
+    clicked_option = document.getElementById(selected_answer).parentNode;
     select_answer_text = document.getElementById(selected_answer).innerText;
-    console.log("Select Ansr Text: ", select_answer_text);
+
     if (select_answer_text === questions[q].answer && clicked[clickedQuestion] == 1) {
 
         clicked_option.style.backgroundColor = 'green';
@@ -98,9 +93,9 @@ function checkAnswer(selected_answer) {
         q++;
 
     }
-    console.log("Q: ", q, "Questions.length: ", questions.length)
+
     if (q == questions.length) {
-        endQuiz()
+        endQuiz();
         return;
     }
     setTimeout(function () {
@@ -112,18 +107,18 @@ function checkAnswer(selected_answer) {
 }
 
 function saveScore(newScore) {
-    localStorage.setItem('entry', JSON.stringify(newScore))
-    let scoreList = JSON.parse(localStorage.getItem("highscore"))
-    let entry = JSON.parse(localStorage.getItem("entry"))
+    localStorage.setItem('entry', JSON.stringify(newScore));
+    let scoreList = JSON.parse(localStorage.getItem("highscore"));
+    let entry = JSON.parse(localStorage.getItem("entry"));
     if (scoreList == null) {
-        scoreList = []
+        scoreList = [];
         scoreList.push(entry);
-        localStorage.setItem('highscore', JSON.stringify(scoreList))
+        localStorage.setItem('highscore', JSON.stringify(scoreList));
     } else {
         scoreList.push(entry);
-        localStorage.setItem('highscore', JSON.stringify(scoreList))
+        localStorage.setItem('highscore', JSON.stringify(scoreList));
     }
-    console.log("New Score List: ", scoreList);
+
 }
 
 
@@ -136,8 +131,8 @@ submitBtn.addEventListener('click', function (event) {
     let newScore = {
         player: playerName,
         score: score
-    }
-    console.log(newScore);
-    saveScore(newScore)
-    window.open('scores.html')
+    };
+
+    saveScore(newScore);
+    window.open('scores.html');
 })

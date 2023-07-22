@@ -1,12 +1,12 @@
 const highscoreContainer = document.getElementsByClassName('highscores-container');
-const highscores = document.getElementById('highscores')
+const highscores = document.getElementById('highscores');
 
 function getScores() {
-    let storedScores = JSON.parse(localStorage.getItem("highscore"))
+    let storedScores = JSON.parse(localStorage.getItem("highscore"));
     if (storedScores != null) {
-        return storedScores
+        return storedScores;
     }
-    return []
+    return [];
 }
 
 function orderedScores() {
@@ -16,15 +16,14 @@ function orderedScores() {
     });
     scoreList.reverse();
     var topTenScores = scoreList.slice(0, 10);
-    console.log(topTenScores);
     createLeaderBoard(topTenScores);
 }
 
 function createLeaderBoard(topTenScores) {
     topTenScores.forEach(element => {
-        scoreElement = document.createElement('div')
-        scoreElement.innerText = element.player + " - " + element.score
-        highscores.append(scoreElement)
+        scoreElement = document.createElement('div');
+        scoreElement.innerText = element.player + " - " + element.score;
+        highscores.append(scoreElement);
     });
 
 }
