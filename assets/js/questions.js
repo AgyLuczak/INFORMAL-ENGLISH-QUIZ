@@ -4,7 +4,7 @@ let questions = [{
         choice2: "What do you find interesting?",
         choice3: "What are you looking for?",
         choice4: "Whose turn is it?",
-        answer: 'c',
+        answer: 'What are you looking for?',
     },
     {
         question: "He had us all in stitches",
@@ -12,7 +12,7 @@ let questions = [{
         choice2: "He made us laugh a lot",
         choice3: "He fooled us",
         choice4: "He got us interested in sewing",
-        answer: 'b'
+        answer: 'He made us laugh a lot'
     },
     {
         question: "Ta!",
@@ -20,7 +20,7 @@ let questions = [{
         choice2: "Bye",
         choice3: "Yes!",
         choice4: "Right, I see.",
-        answer: 'a'
+        answer: 'Thank you!'
     },
     {
         question: "These people are minted.",
@@ -28,7 +28,7 @@ let questions = [{
         choice2: "These people smell very nice.",
         choice3: "These people are crazy.",
         choice4: "These people are very rich.",
-        answer: 'd'
+        answer: 'These people are very rich.'
     },
     {
         question: "What do you reckon?",
@@ -36,7 +36,7 @@ let questions = [{
         choice2: "What do you think?",
         choice3: "Do you suffer from reflux?",
         choice4: "What is your favourite record?",
-        answer: 'b'
+        answer: 'What do you think?'
     },
     {
         question: "I'm knackered.",
@@ -44,7 +44,7 @@ let questions = [{
         choice2: "I'm all bruised.",
         choice3: "I'm behind with work.",
         choice4: "I'm very sad.",
-        answer: 'a'
+        answer: "I'm very tired."
     },
     {
         question: "Are you taking the mickey?",
@@ -52,7 +52,7 @@ let questions = [{
         choice2: "Do you like Mickey Mouse?",
         choice3: "Are you joking?",
         choice4: "Are you taking your mouse to the vet?",
-        answer: 'c'
+        answer: 'Are you joking?'
     },
     {
         question: "My wife is doing my head in.",
@@ -60,7 +60,7 @@ let questions = [{
         choice2: "My wife hits me on my head a lot.",
         choice3: "My wife is annoying me.",
         choice4: "My wife tells me to be quiet.",
-        answer: 'c'
+        answer: 'My wife is annoying me.'
     },
     {
         question: "What time do you make it?",
@@ -68,7 +68,7 @@ let questions = [{
         choice2: "What's the time?",
         choice3: "What time do you finish work?",
         choice4: "Why are you late?",
-        answer: 'b'
+        answer: "What's the time?"
     },
     {
         question: "What are you up to?",
@@ -76,6 +76,6 @@ let questions = [{
         choice2: "Are you in trouble?",
         choice3: "How much money do you owe?",
         choice4: "What are you doing right now?",
-        answer: 'd'
+        answer: 'What are you doing right now?'
     }
 ];
