@@ -24,7 +24,6 @@ function shuffleQuestions(quests) {
 
 questions = shuffleQuestions(questions)
 
-
 // to keep track of question number
 var q = 0
 clicked = {};
@@ -34,14 +33,18 @@ function displayQuestion() {
         questionNumber.innerHTML = `${q + 1}/10`
         // add the value of each question to the questionText tag
         let all_options = document.getElementsByClassName('answer-container');
+        options_array = [questions[q].choice1, questions[q].choice2, questions[q].choice3, questions[q].choice4]
+        console.log("Options Array: ", options_array);
+        shuffled_options = shuffleQuestions(options_array)
+        console.log("Shuffled options:", shuffled_options);
         for (let i = 0; i < all_options.length; i++) {
             all_options[i].style.backgroundColor = 'coral';
         }
         questionText.innerHTML = questions[q].question
-        option1.innerHTML = questions[q].choice1
-        option2.innerHTML = questions[q].choice2
-        option3.innerHTML = questions[q].choice3
-        option4.innerHTML = questions[q].choice4
+        option1.innerHTML = shuffled_options[0]
+        option2.innerHTML = shuffled_options[1]
+        option3.innerHTML = shuffled_options[2]
+        option4.innerHTML = shuffled_options[3]
     } catch (error) {
         console.error("An error occurred while displaying the question", error);
     }
@@ -79,13 +82,15 @@ function checkAnswer(selected_answer) {
     console.log("Question Number: ", q);
     clicked_option = document.getElementById(selected_answer).parentNode
     console.log("clicked[clickedQuestion]", clicked[clickedQuestion]);
-    if (selected_answer === questions[q].answer && clicked[clickedQuestion] == 1) {
+    select_answer_text = document.getElementById(selected_answer).innerText;
+    console.log("Select Ansr Text: ", select_answer_text);
+    if (select_answer_text === questions[q].answer && clicked[clickedQuestion] == 1) {
 
         clicked_option.style.backgroundColor = 'green';
         score++;
         console.log("Score: ", score);
         scoreCounter.innerHTML = score;
-    } else if (selected_answer != questions[q].answer && clicked[clickedQuestion] == 1) {
+    } else if (select_answer_text != questions[q].answer && clicked[clickedQuestion] == 1) {
         clicked_option.style.backgroundColor = 'red';
 
     }
