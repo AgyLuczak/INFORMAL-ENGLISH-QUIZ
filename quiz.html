@@ -38,7 +38,7 @@
             <p class="hud-prefix">
                 QUESTION
             </p>
-            <h1 class="hud-main-text" id="questionCounter"></h1>
+            <h1 class="hud-main-text" id="questionCounter">0/10</h1>
         </div>
         <div class="hud-item">
             <p class="hud-prefix">
@@ -94,14 +94,14 @@
             <div class="container-fluid my-5">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-6 col-lg-8">
-                        <h1 class="save-heading text-center">
+                        <h2 class="save-heading text-center">
                             ENTER YOUR NAME TO SAVE YOUR SCORE!
-                        </h1>
+                        </h2>
                     </div>
                 </div>
             </div>
         </section>
-        <form method="submit" id="submit-form" action="">
+        <form method="get" id="submit-form">
             <input type="text" name="name" id="fullname" class="form-control" placeholder="Your Name" required>
             <br>
             <div class="buttons text-center mb-2">
