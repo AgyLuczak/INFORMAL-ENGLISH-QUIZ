@@ -204,3 +204,13 @@ h2 {
     background-color: #4d35bf;
     border-radius: 10px;
 }
+
+.error-container {
+    background-color: #4d35bf;
+    border-radius: 10px;
+
+}
+
+.error-message {
+    padding-top: 150px;
+}
