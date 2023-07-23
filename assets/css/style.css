@@ -66,7 +66,9 @@ h2 {
 
 .message-container {
     background-color: #4d35bf;
+    border-radius: 10px;
 }
+
 
 
 
@@ -113,7 +115,9 @@ h2 {
 
 .instructions-container {
     background-color: #4d35bf;
+    border-radius: 10px;
 }
+
 
 #hud {
     display: flex;
@@ -198,5 +202,5 @@ h2 {
 
 .highscores-container {
     background-color: #4d35bf;
-
+    border-radius: 10px;
 }
