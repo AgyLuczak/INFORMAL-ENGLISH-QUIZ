@@ -193,3 +193,8 @@ h2 {
     font-weight: 700;
     text-shadow: 7px 3px 3px #6641C3;
 }
+
+.highscores-container {
+    background-color: #4d35bf;
+
+}
