@@ -177,16 +177,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-/*--Media queries--*/
 
-@media screen and (max-width: 600px) {
-    .buttons {
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
 
 .hide {
     display: none;
@@ -197,12 +188,13 @@ h2 {
     flex-direction: column;
     align-items: center;
     font-weight: 700;
-    text-shadow: 7px 3px 3px #6641C3;
 }
 
 .highscores-container {
     background-color: #4d35bf;
     border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .error-container {
@@ -213,4 +205,16 @@ h2 {
 
 .error-message {
     padding-top: 150px;
+
+}
+
+/*--Media queries--*/
+
+@media screen and (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }

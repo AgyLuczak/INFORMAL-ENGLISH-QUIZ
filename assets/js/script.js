@@ -83,7 +83,6 @@ function checkAnswer(selected_answer) {
 
         clicked_option.style.backgroundColor = 'green';
         score++;
-        console.log("Score: ", score);
         scoreCounter.innerHTML = score;
     } else if (select_answer_text != questions[q].answer && clicked[clickedQuestion] == 1) {
         clicked_option.style.backgroundColor = 'red';
