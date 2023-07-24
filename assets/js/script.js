@@ -102,7 +102,7 @@ function checkAnswer(selected_answer) {
         if (q < questions.length) {
             displayQuestion();
         }
-    }, 1000)
+    }, 1000);
 }
 
 function saveScore(newScore) {
