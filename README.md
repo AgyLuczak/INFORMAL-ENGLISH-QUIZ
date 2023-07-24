@@ -16,9 +16,6 @@ This is my second milestone project in which I added Java Script to make the web
 </br>
 
 ## **UX-User Experience Design**
-
-[Visit the website here](https://agyluczak.github.io/INFORMAL-ENGLISH-QUIZ/)
-
 </br>
 
 
@@ -47,5 +44,21 @@ This is my second milestone project in which I added Java Script to make the web
 4. As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices
 5. As a first-time and returning visitor, I want to be able to retake the quiz as many times I want to to learn the expressions I got wrong.
 6. As a first-time or returning visitor, I want to be able to save my score.
+
+</br>
+
+## **Scope Plane**
+
+</br>
+
+In order to achieve the strategy goals, the following features will be included on the website:
+- A welcome message at the top of the Home Page stating clearly it is Informal English Quiz
+- A hero image showing people chatting in a pub where people are likely to use Informal English
+- A favicon with union-jack which is displayed next to the URL of the site in a browser's address bar to associate the quiz with the English language
+- Navbar and buttons to navigate easily between the pages. Exit buttons allowing the user to quit the quiz.
+- Instructions page which can be easily accessed through the navbar and the Instructions button
+- Clear text and hero image which will be responsive on different devices. Right level of contrast between the text and the background.
+- Play again button if the user wants to do the quiz again. The questions and the order of the answers will be shuffled to make the quiz more challenging.
+- Submit form at the end of the quiz where a user can save their score after entering their name.
 
 </br>
