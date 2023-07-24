@@ -62,3 +62,18 @@ In order to achieve the strategy goals, the following features will be included 
 - Submit form at the end of the quiz where a user can save their score after entering their name.
 
 </br>
+
+## **Structure Plane** 
+
+</br>
+
+The website consists of four pages:
+- **Home**
+- **Instructions**
+- **Start Quiz**
+- **Scores**
+
+The navbar recurring on each page allows users to easily move between the pages and go back to Home Page quickly. I also used buttons to link the pages and make navigation of the website even easier. The exit button is used as well if a user wants to quit the quiz.
+I used a Union Jack favicon in the address bar for every page to make it clear to the user they are still on the same website.  I used the same background colours for different sections on each page to create a certain design pattern to the website. The Home Page contains a short welcome message, a hero image and button links to Instructions page and Quiz page. The quiz has  a question container and four answer containers that can be clicked on. At the end of the quiz the users will be taken to the scores page where they can save their score by entering their name. When the submit button is hit the form will be hidden and the score list will appear. Users will have a chance to retake the quiz or quit it by pressing the appropriate button.
+
+</br>
