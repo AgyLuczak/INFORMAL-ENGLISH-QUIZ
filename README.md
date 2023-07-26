@@ -98,48 +98,26 @@ I used a Union Jack favicon in the address bar for every page to make it clear t
 - ***Solution:*** moved onclick event to the answer containers in quiz.html
 
 5. **When starting the quiz I was taken to the last question** 
-- ***Solution:*** Added a global variable
+- ***Solution:*** Added a global variable q for the number of questions
 
-6.	**Can't see the menu items when the Navbar is collapsed as it merges with the backround image of the website** 
+6.	**Several answer options could be clicked on before moving to the next question**
+- ***Solution:*** Added setTimeout function 
 
-</br>
+7. **The quiz container didn't hide after the last question**
+- ***Solution:*** Added a new div with an id outside bootstrap class div to prevent bootstrap from overriding it. (credit to my friend Harshit)
 
-![navbar collapse issue](./docs/togglebarissue.png)
+8. **Upon pressing enter instead of submit button, I was taken to the 1st question of the quiz**
+- ***Solution:*** Swapped the anchor tag for a button one
 
-</br>
+9. **Unexpected token error**
+![unexpected token issue](./docs/unexpected_token.png)
 
-- ***Solution:*** added backround colour to the navbar-collapse class matching the navbar colour.
+- ***Solution:*** Removed the links to script.js from html pages where the logic was not applied
 
-7. **Social icons wouldn't hover**
-- ***Solution:*** added social-icons class in the links in html and targeted them with css 
+A lot of issues were caused by incorrect syntax, missing brackets or forgetting to call the function.
 
-8. **The carousel covered the whole screen**
-- ***Solution:*** I put the carousel in a container and gave it size attributes. (credit to Stackoverlow)
 
-9. **The carousel images were too stretched**
 
-</br>
-
-![stretched carousel](./docs/carousel_stretched.png)
 
 </br>
 
-- ***Solution:*** I added size attributes to carousel-inner class and the images. Unfortunately, I couldn't make the carousel wider without compromising the quality of the photos.
-
-10. **The carousel overlapped the text on larger screens**
-- ***Solution:*** I added media query @media screen and (min-width: 1280px) to change the size of the carousel container on bigger screens.
-
-11. **Gallery images were not of the same size and didn't look even**
-- ***Solution:*** I tried resizing the gallery images with css to no avail. Once I cropped the images and made them the same size the problem was solved.
-
-12. **The logo was not inline with the navbar on smaller screens and was overlapping the body of the page slightly**
-- ***Solution:*** I cropped the logo and made it smaller.
-
-13. **The code validator was showing an error with section tags.**
-- ***Solution:*** I removed section tags and replaced them with div tags in parts without headings.
-
-14. **Couldn't remove the underlining or change the colour of the contact details on the contact page**
-- ***Solution:*** I added no-underline class to the link (which was making the contact details blue and underlined) and changed the colour in CSS (credit to Stackoverlow)
-
-15. **Couldn't open the wireframes pdf file in Gitpod**
-- ***Solution:*** I downloaded a pdf extension and then it worked
