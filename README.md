@@ -41,9 +41,10 @@ This is my second milestone project in which I added Java Script to make the web
 1. As a first-time visitor, I want to easily understand the purpose of the quiz.
 2. As a first-time visitor, I want to easily find instructions for the quiz.
 3. As a first-time and returning visitor, I want to be able to easily navigate the quiz. I can access all the pages easily and go back to the Home Page quickly. I also want to be able to quit the quiz if I feel like it.
-4. As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices
-5. As a first-time and returning visitor, I want to be able to retake the quiz as many times I want to to learn the expressions I got wrong.
-6. As a first-time or returning visitor, I want to be able to save my score.
+4. As a first-time and returning visitor, I want to know when the answer I chose is correct/ incorrect.
+5. As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices
+6. As a first-time and returning visitor, I want to be able to retake the quiz as many times I want to to learn the expressions I got wrong.
+7. As a first-time or returning visitor, I want to be able to save my score.
 
 </br>
 
@@ -101,6 +102,40 @@ I chose two background colours for the backround across the whole webiste: color
 In the quiz section I used more vivid colours for the answer containers: coral as the background colour and dark purple for the text. I felt that this section should stand out more.
 
 I wanted all the colours to go together nicely, but also offer enough variety so that the website is eye catching for users.
+
+</br>
+
+### **Features**
+
+</br>
+
+
+- **Navbar** – Reccuring on each page. It's responsive and toggles to a hamburger menu on smaller screens. Menu items are coloured white when the page is active and wheat when inactive. For inactive pages the backround behind menu items changes to darker purple colour when hovered upon and the text colour turns white.
+
+- **Buttons** – Another feature reccuring on each page which helps users with navigation. The buttons can be used to start and quit the quiz, direct users to instructions and score pages and also go back to the Home Page from an error page. After finishing the quiz, users can use the submit button to save their score.
+
+- **Home Page**  Cointains a welcome message: 'Welcome to Informal English' which makes the purpose of the website clear for the users. The page a contains a hero image showing people chatting in a pub to associate the Informal style of English with the environment where it's likely to be used. Below the hero image there is a container with a message inviting users to take the quiz to test their knowledge of Informal English. There are two buttons under the message: one directs users to the Instructions Page and the other one starts the quiz.
+
+- **Instructions Page** includes a container with Instructions and a button to start the quiz.
+
+- **Star Quiz Page** contains the actual quiz. It has a head-up display with questions and score counter. Below the hud there is a question container and 4 answer containers with 4 possible options. If users click on the right option, the background color will turn to green. If they choose the wrong answer, the background colour will change to red. There is a set time-out of 1s after which users are automatically taken to the next question. There is an exit button below the quiz which allows the user to quit the game if they wish to. In that case, they'll be redirected to the Home Page. Both questions and order of the answers are shuffled to make the quiz more challenging. Once all the questions are done a submit form appears so that users can save their score. A submit button under the form takes users to the Scores page.
+
+- **Score Page** shows recent scores. It uses local storage. It also cantains two buttons: Play Again (which takes users to the start of the quiz) and Exit (which takes users back to the Home Page).
+
+- **404 error page** This page helps users go back to the Home Page if anything goes wrong.
+
+
+### **Features I'd like to incorporate in the future**
+
+</br>
+
+ - I'd like to use one html page and incorporate more java script to make certain section pop up/ hide
+
+ - I'd like to increase the number of questions and create differnt levels of difficulty
+
+ - I'd like to add back end language to implement a leaderboard that would save the score of users using different devices. Right now I've been only able to use the local storage,
+
+ 
 
 </br>
 
