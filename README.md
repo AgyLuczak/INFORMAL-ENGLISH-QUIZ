@@ -98,7 +98,7 @@ I used a Union Jack favicon in the address bar for every page to make it clear t
 - ***Solution:*** moved onclick event to the answer containers in quiz.html
 
 5. **When starting the quiz I was taken to the last question** 
-- ***Solution:*** Added a global variable q for the number of questions
+- ***Solution:*** Added a global variable q for the number of  questions (solution found on ChatGPT4)
 
 6.	**Several answer options could be clicked on before moving to the next question**
 - ***Solution:*** Added setTimeout function 
