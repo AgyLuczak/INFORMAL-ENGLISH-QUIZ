@@ -124,6 +124,7 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - **404 error page** This page helps users go back to the Home Page if anything goes wrong.
 
+- **Favicon** I added a union-jack favicon to relate to the content of the quiz.
 
 ### **Features I'd like to incorporate in the future**
 
@@ -139,6 +140,66 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 </br>
 
+</br>
+
+ ## **Technologies Used**
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - Used as the basic building block for the project and to structure the content.
+
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+    - Used to style all the web content across the project. 
+
+- [Bootstrap 5.3](https://getbootstrap.com/)
+    - Used as the main framework to make the project responsive.
+
+- [jQuery](https://jquery.com/)
+    - Used with Bootstrap to make the navbar responsive.
+
+- [JavaScript](https://www.javascript.com/)
+    - Used for the bootstrap navbar for extending collapse plugin to implement responsive behaviour.
+
+- [Google Fonts](https://fonts.google.com/)
+    - Used to obtain the fonts used in the project.
+
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used as a primary method of fixing spacing issues, finding bugs, console errors and testing responsiveness across the project.
+
+- [Github](https://github.com/)
+    - Used to store code for the project after being pushed.
+
+- [Git](https://git-scm.com/)
+    - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+- [Gitpod](https://www.gitpod.io/)
+    - Used as the development enviroment.
+
+- [Balsamiq](https://balsamiq.com/)
+    - Used to create the wireframes for the project.
+
+- [Befunky Photo Editor](https://befunky.com)
+     - Used to resize and crop the images
+
+- [Style generator](https://html-css-js.com/)
+    - Used for colour gradient, text-shadow and box shadow
+
+- [AmIResponsive](http://ami.responsivedesign.is/)
+    - Used to generate responsive image of the website used in README file.
+
+- [Readme.so](https://readme.so)
+    - Used to edit the readme file.
+
+- [Tables generator](https://www.tablesgenerator.com/)
+    - Used to create a table in readme file.
+
+- [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate all HTML code written and used in this webpage.
+
+- [JS Validation Service](https://https://jshint.com/)
+    - Used to validate all CSS code written and used in this webpage.
+
+-[ChatGPT4](https://chat.openai.com/)
+ - Used to analyse the code from various youtube tutorials for better understanding of the code. Also used along StackOverlow to ask for possible causes of issues I came across while doing the project.
 
 
 
