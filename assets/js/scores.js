@@ -1,4 +1,3 @@
-const highscoreContainer = document.getElementsByClassName('highscores-container');
 const highscores = document.getElementById('highscores');
 
 function getScores() {

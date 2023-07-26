@@ -9,9 +9,8 @@ const endScreen = document.getElementById('end-screen');
 const quizContainer = document.getElementById('quiz-container');
 const submitBtn = document.getElementById('submit-btn');
 
-let runningQuestion = 0;
+
 let score = 0;
-let scoreList = [];
 //Shuffle the questions
 function shuffleQuestions(quests) {
     for (let i = quests.length - 1; i > 0; i--) {
@@ -45,7 +44,7 @@ function displayQuestion() {
         option3.innerHTML = shuffled_options[2];
         option4.innerHTML = shuffled_options[3];
     } catch (error) {
-        console.error("An error occurred while displaying the question", error);
+        console.error("An ERROR Occured:", error.message);
     }
 
 }
@@ -55,12 +54,7 @@ if (questions.length > 0) {
     displayQuestion();
 }
 
-function disableOptions() {
-    let options = document.getElementsByClassName('answer-container');
-    for (let i = 0; i < options.length; i++) {
-        options[i].disabled = true;
-    }
-}
+
 
 function endQuiz() {
     quizContainer.classList.add("hide");
