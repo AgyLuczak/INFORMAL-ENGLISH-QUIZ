@@ -21,7 +21,7 @@ function orderedScores() {
 // create and display leaderboard
 function createLeaderBoard(topTenScores) {
     topTenScores.forEach(element => {
-        scoreElement = document.createElement('div');
+        scoreElement = document.createElement('li');
         scoreElement.innerText = element.player + " - " + element.score;
         highscores.append(scoreElement);
     });
