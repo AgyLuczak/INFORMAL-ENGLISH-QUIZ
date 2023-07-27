@@ -293,6 +293,114 @@ With this type of test, the idea is to simulate a heavy load on the website, whi
 
 ![saved scores](./docs/scores.png)
 
+</br>
+
+### Further Testing
+
+</br>
+
+**The website was tested on the following browsers:**
+
+| BROWSER  | RESULT  |
+|---|---|
+|  Google Chrome | Success |
+| Microsoft Edge  | Success |
+| Opera  | Success |
+|  Mozilla Firefox | Success |
+
+</br>
+
+
+**I used Chrome Developer tools to simulate the following devices:**
+- iphone SE
+- iphone XR
+- iphone 12 Pro
+- Pixel 5
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Air 
+- iPad Mini
+- Surface Pro7
+- Galaxy Fold 
+- Samsung Galaxy A51/71
+- Nest Hub 
+- Nest Hub Max
+
+The website worked as expected and was responsive on all these devices.
+
+</br>
+
+
+### **W3C Markup Validator and W3C CSS Validator.**
+
+</br>
+
+- [W3C Markup Validator](https://validator.w3.org/)
+
+I used W3C Validator to test all HTML pages in the project and the result of 'no errors' was shown for all of them.
+
+![W3C HTML](./docs/html_validation.png)
+
+</br>
+
+I used W3C CSS Validator for CSS
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+    - It showed no errors
+
+![CSS validated](./docs/css_validation.png)
+
+### **JSHint**
+
+I used JSHint - a code analysis tool for Java Script
+
+- [JSHint](https://jshint.com/)
+
+JSHint kept showing me unused variables. A lot of these variables are used in the HTML pages. I went through the js code to remove all the unused variables.
+
+![JSHint](./docs/JSHint.png)
+
+</br>
+
+### **Lighthouse**
+
+**I used Lighthouse for testing the website's performance.**
+
+Here are the results:
+
+**Home Page**
+
+![Lighthouse Home](./docs/Lighthouse_home.png)
+
+
+**Instructions Page**
+
+![Lighthouse Instructions](./docs/Lighthouse_instructions.png)
+
+
+**Quiz Page**
+
+![Lighthouse Quiz](./docs/Lighthouse_quiz.png)
+
+
+**Scores Page**
+
+![Lighthouse Quiz](./docs/Lighthouse_scores.png)
+
+
+**Error Page**
+
+![Lighthouse Quiz](./docs/Lighthouse_404.png)
+
+</br>
+
+
+
+
+
+
+
 
 
 
