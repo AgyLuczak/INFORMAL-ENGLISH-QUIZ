@@ -237,6 +237,82 @@ Performance Testing: Its aim is to measure response time of a system or an appli
 Load Testing: This type of testing simulates a heavy load on the website. This way developers can identify weaknesses in the system
 With this type of test, the idea is to simulate a heavy load on the website, which helps developers identify weaknesses in the system and make adjustments. Only automated tests can provide such simulations effectively.
 
+</br>
+
+## **Manual Testing for my project**
+
+ ### User Stories
+ 
+ </br>
+
+1. **As a first-time visitor, I want to easily understand the purpose of the quiz.**
+
+- When users enter the website they see the message 'Welcome to Informal English Quiz'. The hero image below the message show people chatting in a pub where Informal English is likely to be used. Users are then invited to test their Informal English knowledge by taking the quiz. I also used a Union Jack Favicon so that users associate the website with the English language.
+
+</br>
+
+2. **As a first-time visitor, I want to easily find instructions for the quiz.**
+
+- Users can easily find the instructions either by using a navbar or a button directing them to the Instructions Page.
+
+![instructions](./docs/instructions.png)
+
+</br>
+
+**3. As a first-time and returning visitor, I want to be able to easily navigate the quiz. I can access all the pages easily and go back to the Home Page quickly. I also want to be able to quit the quiz if I feel like it.**
+
+- Users can use both the navbar and the buttons to navigate the website. The exit button is provided below the quiz if users decide to quit the quiz.
+
+</br>
+
+**4. As a first-time and returning visitor, I want to know when the answer I chose is correct/ incorrect.**
+
+- When users click the right answer, the background colour will change to green and a point will be added to the score counter. If the answer is incorrect, the background colour will change to red and there will be no point added to the score counter.
+
+![correct](./docs/correct.png)
+
+![incorrect](./docs/incorrect.png)
+
+</br>
+
+5. **As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices.**
+
+- I used 'Signika' font which is very clear and simple.  I made sure that the text colour and the background colour have enough contrast to make the content easy to read. Bootsrap 5.3 was used to ensure that the quiz and the hero image is reponsive on different devices and the hero image. I used media query for the buttons so that they are stacked above each other and don't take much space on smaller devices. 
+
+</br>
+
+6. As a first-time and returning visitor, I want to be able to retake the quiz as many times I want to to learn the expressions I got wrong.
+
+- Users can retake the quiz as many time as they want. Each time the user does the quiz, the questions and the order of the answers will be shuffled to make the quiz more challenging.
+
+</br>
+
+7. As a first-time or returning visitor, I want to be able to save my score.
+
+- At the end of the quiz users can save their score by entering their name in form. Upon clicking submit button or pressing enter they will be taken to the scores page where their score will be saved on the leaderboard. 
+
+![saved scores](./docs/scores.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
