@@ -112,17 +112,32 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - **Navbar** – Reccuring on each page. It's responsive and toggles to a hamburger menu on smaller screens. Menu items are coloured white when the page is active and wheat when inactive. For inactive pages the backround behind menu items changes to darker purple colour when hovered upon and the text colour turns white.
 
+![navbar](./docs/navbar.png)
+
+
 - **Buttons** – Another feature reccuring on each page which helps users with navigation. The buttons can be used to start and quit the quiz, direct users to instructions and score pages and also go back to the Home Page from an error page. After finishing the quiz, users can use the submit button to save their score.
 
+![buttons](./docs/buttons.png)
+
 - **Home Page**  Cointains a welcome message: 'Welcome to Informal English' which makes the purpose of the website clear for the users. The page a contains a hero image showing people chatting in a pub to associate the Informal style of English with the environment where it's likely to be used. Below the hero image there is a container with a message inviting users to take the quiz to test their knowledge of Informal English. There are two buttons under the message: one directs users to the Instructions Page and the other one starts the quiz.
+
+![quiz entry](./docs/quiz_entry.png)
+
+![submit name](./docs/submit_name.png)
 
 - **Instructions Page** includes a container with Instructions and a button to start the quiz.
 
 - **Star Quiz Page** contains the actual quiz. It has a head-up display with questions and score counter. Below the hud there is a question container and 4 answer containers with 4 possible options. If users click on the right option, the background color will turn to green. If they choose the wrong answer, the background colour will change to red. There is a set time-out of 1s after which users are automatically taken to the next question. There is an exit button below the quiz which allows the user to quit the game if they wish to. In that case, they'll be redirected to the Home Page. Both questions and order of the answers are shuffled to make the quiz more challenging. Once all the questions are done a submit form appears so that users can save their score. A submit button under the form takes users to the Scores page.
 
+![quiz](./docs/quiz.png)
+
+
 - **Score Page** shows recent scores. It uses local storage. It also cantains two buttons: Play Again (which takes users to the start of the quiz) and Exit (which takes users back to the Home Page).
 
 - **404 error page** This page helps users go back to the Home Page if anything goes wrong.
+
+![error](./docs/error_page.png)
+
 
 - **Favicon** I added a union-jack favicon to relate to the content of the quiz.
 
@@ -198,8 +213,8 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 - [JS Validation Service](https://https://jshint.com/)
     - Used to validate all CSS code written and used in this webpage.
 
--[ChatGPT4](https://chat.openai.com/)
- - Used to analyse the code from various youtube tutorials for better understanding of the code. Also used along StackOverlow to ask for possible causes of issues I came across while doing the project.
+- [ChatGPT4](https://chat.openai.com/)
+    - Used to analyze the code from various youtube tutorials for better understanding of the code. Also used along StackOverflow to ask for possible causes of issues I came across while doing the project.
 
 
 

@@ -46,7 +46,6 @@ function displayQuestion() {
     } catch (error) {
         console.error("An ERROR Occured:", error.message);
     }
-
 }
 
 
@@ -55,12 +54,12 @@ if (questions.length > 0) {
 }
 
 
-
 function endQuiz() {
     quizContainer.classList.add("hide");
 
     endScreen.classList.remove("hide");
 }
+
 
 function checkAnswer(selected_answer) {
     clickedQuestion = document.getElementById('question-text').innerHTML;
@@ -74,30 +73,26 @@ function checkAnswer(selected_answer) {
     select_answer_text = document.getElementById(selected_answer).innerText;
 
     if (select_answer_text === questions[q].answer && clicked[clickedQuestion] == 1) {
-
         clicked_option.style.backgroundColor = 'green';
         score++;
         scoreCounter.innerHTML = score;
     } else if (select_answer_text != questions[q].answer && clicked[clickedQuestion] == 1) {
         clicked_option.style.backgroundColor = 'red';
-
     }
     if (clicked[clickedQuestion] === 1) {
         q++;
-
     }
-
     if (q == questions.length) {
         endQuiz();
         return;
     }
     setTimeout(function () {
-
         if (q < questions.length) {
             displayQuestion();
         }
     }, 1000);
 }
+
 
 function saveScore(newScore) {
     localStorage.setItem('entry', JSON.stringify(newScore));
@@ -111,11 +106,7 @@ function saveScore(newScore) {
         scoreList.push(entry);
         localStorage.setItem('highscore', JSON.stringify(scoreList));
     }
-
 }
-
-
-
 
 
 submitBtn.addEventListener('click', function (event) {
@@ -125,7 +116,6 @@ submitBtn.addEventListener('click', function (event) {
         player: playerName,
         score: score
     };
-
     saveScore(newScore);
     window.open('scores.html');
 })
