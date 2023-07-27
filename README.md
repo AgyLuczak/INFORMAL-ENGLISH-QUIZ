@@ -141,6 +141,9 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - **Favicon** I added a union-jack favicon to relate to the content of the quiz.
 
+![favicon](./docs/favicon_screenshot.png)
+
+
 ### **Features I'd like to incorporate in the future**
 
 </br>
@@ -159,62 +162,45 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
  ## **Technologies Used**
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-    - Used as the basic building block for the project and to structure the content.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used as the basic building block for the project and to structure the content.
 
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-    - Used to style all the web content across the project. 
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)- Used to style all the web content across the project. 
 
-- [Bootstrap 5.3](https://getbootstrap.com/)
-    - Used as the main framework to make the project responsive.
+- [JavaScript](https://www.javascript.com/) - Used for user interaction on the site
 
-- [jQuery](https://jquery.com/)
-    - Used with Bootstrap to make the navbar responsive.
+- [Bootstrap 5.3](https://getbootstrap.com/) - Used as the main framework to make the project responsive.
 
-- [JavaScript](https://www.javascript.com/)
-    - Used for the bootstrap navbar for extending collapse plugin to implement responsive behaviour.
+- [jQuery](https://jquery.com/) - Used with Bootstrap to make the navbar responsive.
 
-- [Google Fonts](https://fonts.google.com/)
-    - Used to obtain the fonts used in the project.
+- [Google Fonts](https://fonts.google.com/) - Used to obtain the fonts used in the project.
 
-- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
-    - Used as a primary method of fixing spacing issues, finding bugs, console errors and testing responsiveness across the project.
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - Used as a primary method of fixing spacing issues, finding bugs, console errors and testing responsiveness across the project.
 
-- [Github](https://github.com/)
-    - Used to store code for the project after being pushed.
+- [Github](https://github.com/) - Used to store code for the project after being pushed.
 
-- [Git](https://git-scm.com/)
-    - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [Git](https://git-scm.com/) - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-- [Gitpod](https://www.gitpod.io/)
-    - Used as the development enviroment.
+- [Gitpod](https://www.gitpod.io/) - Used as the development enviroment.
 
-- [Balsamiq](https://balsamiq.com/)
-    - Used to create the wireframes for the project.
+- [Balsamiq](https://balsamiq.com/) - Used to create the wireframes for the project.
 
-- [Befunky Photo Editor](https://befunky.com)
-     - Used to resize and crop the images
+- [Befunky Photo Editor](https://befunky.com) - Used to resize and crop the images
 
-- [Style generator](https://html-css-js.com/)
-    - Used for colour gradient, text-shadow and box shadow
+- [Style generator](https://html-css-js.com/) - Used for colour gradient, text-shadow and box shadow
 
-- [AmIResponsive](http://ami.responsivedesign.is/)
-    - Used to generate responsive image of the website used in README file.
+- [Favicon generator](https://www.favicon-generator.org/) - Used to generate a Union Jack favicon
 
-- [Readme.so](https://readme.so)
-    - Used to edit the readme file.
+- [AmIResponsive](http://ami.responsivedesign.is/) - Used to generate responsive image of the website used in README file.
 
-- [Tables generator](https://www.tablesgenerator.com/)
-    - Used to create a table in readme file.
+- [Readme.so](https://readme.so) - Used to edit the readme file.
 
-- [W3C Markup Validation Service](https://validator.w3.org/) 
-    - Used to validate all HTML code written and used in this webpage.
+-  [Tables generator](https://www.tablesgenerator.com/) - Used to create a table in readme file.
 
-- [JS Validation Service](https://https://jshint.com/)
-    - Used to validate all CSS code written and used in this webpage.
+- [W3C Markup Validation Service](https://validator.w3.org/) - Used to validate all HTML code written and used in this webpage.
 
-- [ChatGPT4](https://chat.openai.com/)
-    - Used to analyze the code from various youtube tutorials for better understanding of the code. Also used along StackOverflow to ask for possible causes of issues I came across while doing the project.
+- [JS Validation Service](https://https://jshint.com/) - Used to validate all CSS code written and used in this webpage.
+
+- [ChatGPT4](https://chat.openai.com/) - Used to analyze the code from various youtube tutorials for better understanding of the code. Also used along StackOverflow to ask for possible causes of issues I came across while doing the project.
 
 
 
