@@ -201,12 +201,41 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 - [JS Validation Service](https://https://jshint.com/) - Used to validate all CSS code written and used in this webpage.
 
 - [ChatGPT4](https://chat.openai.com/) - Used to analyze the code from various youtube tutorials for better understanding of the code. Also used along StackOverflow to ask for possible causes of issues I came across while doing the project.
+</br>
+
+</br>
+
+## **Testing**
+
+I only used Manual Testing for my project, however as a part of the project I need to show awareness of both manual and automated testing and the difference between them.
+
+### **Manual Testing**
+
+Manual testing is done by humans. The development team carry out all actions e.g. identifying potential errors, generating input data, analysing gathered data and evaluating the output. Manual testers need to ensure that the software is functioning correctly on release. Manual testing relies on logic and critical thinking skills. The more experienced testers are, the better they are at spotting and predicting bugs. The disadvantage of manual testing is that it takes more time.
+
+Manual Testing is used for:
+
+Usability Testing - It is user-centric so the best type of test is manual testing. It requires an actuall human end user to see if the application is user friendly.
+
+Ad Hoc Testing - It is the process of conducting a test on-site, either in progress or after a software release. Ad hoc testing builds on traditional usability tests such as exploratory testing.
+
+Exploratory Testing: This type of testing looks for unprecedented scenarios. Human testers are better suited for that role as they can use their experience and expertise to mock different scenarios. A machine is limited to that which is known. 
 
 
+### **Automated Testing**
 
+Testing is done using different automation tools e.g Jest. An automated test is a set of instructions run by a software program, either to verify the behaviour of the software or to identify bugs in it. A computerized test execute all its steps with minimal human intervention once written.
+Automated tests are preferred because they are relatively fast and can be run as often as needed without human involvement. 
+To perform an automated test efficiently, you need three pieces: an isolated test environment, a test scripting language (such as Python), and an open-source automation framework.
 
+Manual Testing is used for:
 
+Regression Testing: It is a repetitive test e.g developing a script to test mundane tasks and standard functions. A regression test is a software testing process that checks an application to see if the changes in new versions have destroyed or damaged old functionalities. This type of test can be time-consuming.
 
+Performance Testing: Its aim is to measure response time of a system or an application. Most testers prefer automated tests, as they offer accurate results with minimal human intervention.
+
+Load Testing: This type of testing simulates a heavy load on the website. This way developers can identify weaknesses in the system
+With this type of test, the idea is to simulate a heavy load on the website, which helps developers identify weaknesses in the system and make adjustments. Only automated tests can provide such simulations effectively.
 
 
 
