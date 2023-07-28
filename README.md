@@ -105,7 +105,7 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 </br>
 
 
-- **Navbar** – Reccuring on each page. It's responsive and toggles to a hamburger menu on smaller screens. Menu items are coloured white when the page is active and wheat when inactive. For inactive pages, the backround behind menu items changes to darker purple colour when hovered upon and the text colour turns white.
+- **Navbar** – Recurring on each page. It's responsive and toggles to a hamburger menu on smaller screens. Menu items are coloured white when the page is active and wheat when inactive. For inactive pages, the background behind menu items changes to darker purple colour when hovered upon and the text colour turns white.
 
 ![navbar](./docs/navbar.png)
 
@@ -383,6 +383,45 @@ Here are the results:
 
 </br>
 
+## **Known bugs and fixes**
+
+</br>
+
+1.  **CSS style could not be applied  to the quiz page**
+- ***Solution:*** rearranged the order of the links and put the style sheet link under the bootstrap link. This way it prevented bootstrap from overriding the css style. (Credit: Stackoverflow)
+
+2.	**Answer options didn't display**
+
+![answers display issue](./docs/answers_display_error.png)
+
+- ***Solution:*** added id to each answer option in quiz.html.
+
+3. **The background colour didn't cover the entire element of answer containers**
+- ***Solution:*** Added parent.node to selected answer in script.js (credit to my friend Harshit)
+
+4. **Clicking worked only on the text, not on the whole answer container**
+- ***Solution:*** moved onclick event to the answer containers in quiz.html
+
+5. **When starting the quiz I was taken to the last question** 
+- ***Solution:*** Added a global variable q for the number of  questions (solution found on ChatGPT4)
+
+6.	**Several answer options could be clicked on before moving to the next question**
+- ***Solution:*** Added setTimeout function 
+
+7. **The quiz container didn't hide after the last question**
+- ***Solution:*** Added a new div with an id outside bootstrap class div to prevent bootstrap from overriding it. (credit to my friend Harshit)
+
+8. **Upon pressing enter instead of submit button, I was taken to the 1st question of the quiz**
+- ***Solution:*** Swapped the anchor tag for a button one
+
+9. **Unexpected token error**
+![unexpected token issue](./docs/unexpected_token.png)
+
+- ***Solution:*** Removed the links to script.js from html pages where the logic was not applied
+
+A lot of issues were caused by incorrect syntax, missing brackets or forgetting to call the function
+
+</br>
 
 ## **Deployment**
 
@@ -429,77 +468,86 @@ If you want to download a local version of the repository, you can clone it.
 
 </br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## **Known bugs and fixes**
+## **Credits** ##
 
 </br>
 
-1.  **CSS style could not be applied  to the quiz page**
-- ***Solution:*** rearranged the order of the links and put the style sheet link under the bootstrap link. This way it prevented bootstrap from overriding the css style. (Credit: Stackoverflow)
+**Code**
 
-2.	**Answer options didn't display**
-
-![answers display issue](./docs/answers_display_error.png)
-
-- ***Solution:*** added id to each answer option in quiz.html.
-
-3. **The background colour didn't cover the entire element of answer containers**
-- ***Solution:*** Added parent.node to selected answer in script.js (credit to my friend Harshit)
-
-4. **Clicking worked only on the text, not on the whole answer container**
-- ***Solution:*** moved onclick event to the answer containers in quiz.html
-
-5. **When starting the quiz I was taken to the last question** 
-- ***Solution:*** Added a global variable q for the number of  questions (solution found on ChatGPT4)
-
-6.	**Several answer options could be clicked on before moving to the next question**
-- ***Solution:*** Added setTimeout function 
-
-7. **The quiz container didn't hide after the last question**
-- ***Solution:*** Added a new div with an id outside bootstrap class div to prevent bootstrap from overriding it. (credit to my friend Harshit)
-
-8. **Upon pressing enter instead of submit button, I was taken to the 1st question of the quiz**
-- ***Solution:*** Swapped the anchor tag for a button one
-
-9. **Unexpected token error**
-![unexpected token issue](./docs/unexpected_token.png)
-
-- ***Solution:*** Removed the links to script.js from html pages where the logic was not applied
-
-A lot of issues were caused by incorrect syntax, missing brackets or forgetting to call the function
+- [W3Schools](https://www.w3schools.com/) - general source of reference
 
 
+- [Mozilla Javascript Reference](https://developer.mozilla.org/) - general source of reference
+
+
+- [Stackoverflow](https://stackoverflow.com/) - suggestions for solutions for various problems while doing the project
+
+- [Code with Ania Kubow](https://www.youtube.com/@AniaKubow) - a lot of great videos explaining different concepts of JS
+
+- [Brian Design](https://www.youtube.com/@briandesign) and [James Quick](https://www.youtube.com/@JamesQQuick) - I watched their tutorials on creating a quiz in JavaScript to get a better understanding of all tge necessary steps in building it. I used some of their ideas in my HTML and CSS.
+
+ - My friend Harshit - help with the end of the quiz and creating a leaderboard as well as with shuffling the questions and answers in the quiz
+
+- Rory Patrick Sheridan (my mentor) - various suggestions on improving the project
+
+</br>
+ 
+**Content**
+
+
+[ShutterStock](https://shutterstock.com/) - Source of the hero image
+
+I created the content of the quiz.
 
 
 </br>
+
+ ## Acknowledgements
+
+ </br>
+
+I would like to say a massive thank you to:
+ 
+ - my course mentor Rory Patrick Sheridan and my tutor Nigel Edwards for their help and support during the project
+
+ - my friend Harshit for his guidance and support during the project
+ 
+ - my classmates Adam and Jacob for the valuable feedback 
+
+ - my husband Gniewomir for his incredible support since the beginning of the course.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
