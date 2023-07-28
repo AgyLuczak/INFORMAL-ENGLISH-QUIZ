@@ -213,13 +213,13 @@ I only used Manual Testing for my project, however as a part of the project I ne
 
 Manual testing is done by humans. The development team carry out all actions e.g. identifying potential errors, generating input data, analysing gathered data and evaluating the output. Manual testers need to ensure that the software is functioning correctly on release. Manual testing relies on logic and critical thinking skills. The more experienced testers are, the better they are at spotting and predicting bugs. The disadvantage of manual testing is that it takes more time.
 
-Manual Testing is used for:
+**Manual Testing is used for:**
 
-Usability Testing - It is user-centric so the best type of test is manual testing. It requires an actuall human end user to see if the application is user friendly.
+**Usability Testing** - It is user-centric so the best type of test is manual testing. It requires an actual human end user to see if the application is user friendly.
 
-Ad Hoc Testing - It is the process of conducting a test on-site, either in progress or after a software release. Ad hoc testing builds on traditional usability tests such as exploratory testing.
+**Ad Hoc Testing** - It is the process of conducting a test on-site, either in progress or after a software release. Ad hoc testing builds on traditional usability tests such as exploratory testing.
 
-Exploratory Testing: This type of testing looks for unprecedented scenarios. Human testers are better suited for that role as they can use their experience and expertise to mock different scenarios. A machine is limited to that which is known. 
+**Exploratory Testing** - This type of testing looks for unprecedented scenarios. Human testers are better suited for that role as they can use their experience and expertise to mock different scenarios. A machine is limited to that which is known. 
 
 
 ### **Automated Testing**
@@ -228,13 +228,13 @@ Testing is done using different automation tools e.g Jest. An automated test is 
 Automated tests are preferred because they are relatively fast and can be run as often as needed without human involvement. 
 To perform an automated test efficiently, you need three pieces: an isolated test environment, a test scripting language (such as Python), and an open-source automation framework.
 
-Manual Testing is used for:
+**Automated Testing is used for:**
 
-Regression Testing: It is a repetitive test e.g developing a script to test mundane tasks and standard functions. A regression test is a software testing process that checks an application to see if the changes in new versions have destroyed or damaged old functionalities. This type of test can be time-consuming.
+**Regression Testing** - It is a repetitive test e.g developing a script to test mundane tasks and standard functions. A regression test is a software testing process that checks an application to see if the changes in new versions have destroyed or damaged old functionalities. This type of test can be time-consuming.
 
-Performance Testing: Its aim is to measure response time of a system or an application. Most testers prefer automated tests, as they offer accurate results with minimal human intervention.
+**Performance Testing** - Its aim is to measure response time of a system or an application. Most testers prefer automated tests, as they offer accurate results with minimal human intervention.
 
-Load Testing: This type of testing simulates a heavy load on the website. This way developers can identify weaknesses in the system
+**Load Testing** - This type of testing simulates a heavy load on the website. This way developers can identify weaknesses in the system
 With this type of test, the idea is to simulate a heavy load on the website, which helps developers identify weaknesses in the system and make adjustments. Only automated tests can provide such simulations effectively.
 
 </br>
@@ -394,6 +394,54 @@ Here are the results:
 ![Lighthouse Quiz](./docs/Lighthouse_404.png)
 
 </br>
+
+</br>
+
+## **Deployment**
+
+I deployed this website by using GitPages and followed these steps:
+
+</br>
+
+**Deploying a GitHub Repoitory via GitHub Pages** 
+
+</br>
+
+1. Log in to GitHub
+2. In your Repository section, select repository you want to deploy
+3. In the menu located at the top of this section, click *settings*
+4. Select *Pages* on the left-hand menu.
+5. In the *Source* section select *deploy from a branch*
+6. In the *Branch* section select *main* and click *Save*
+7. Scroll down to the *Git Hub Pages* section and you will see the message 'Your site is ready to be published' followed by a link to the GitHub Page Web address.
+
+</br>
+
+**Forking the GitHub Repository**
+
+If you want to make changes to your repository without affecting it, you can make a copy of it by 'Forking' it.
+
+</br>
+
+1. Find the GitHub repository
+2. In the top right corner of the page, click the *Fork* button 
+3. You will now have a copy to work on
+
+</br>
+
+**Cloning the GitHub Repository**  
+
+If you want to download a local version of the repository, you can clone it.
+
+1. Find the GitHub repository
+2. Press the arrow on the *Code* button
+3. Copy the link that is shown in the drop-down
+4. Open Gitpod & select the directory location where you would like the clone created
+5. In the terminal type *git clone* and  paste the link you copied in GitHub
+6. Press enter and your local clone will be created.
+
+</br>
+
 
 
 
