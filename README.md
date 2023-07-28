@@ -494,7 +494,6 @@ If you want to download a local version of the repository, you can clone it.
  
 **Content**
 
-
 [ShutterStock](https://shutterstock.com/) - Source of the hero image
 
 I created the content of the quiz.

@@ -9,13 +9,13 @@ const endScreen = document.getElementById('end-screen');
 const quizContainer = document.getElementById('quiz-container');
 const submitBtn = document.getElementById('submit-btn');
 
-
+//Initialize score as 0
 let score = 0;
 //Shuffle the questions
 function shuffleQuestions(quests) {
     for (let i = quests.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        // Swapping values with random index
+        // Swapping values with random index (credit to my friend Harshit)
         [quests[i], quests[j]] = [quests[j], quests[i]];
     };
     return quests;
@@ -48,19 +48,19 @@ function displayQuestion() {
     }
 }
 
-
+//display the first question
 if (questions.length > 0) {
     displayQuestion();
 }
 
-
+//hide the quiz container and show the end screen
 function endQuiz() {
     quizContainer.classList.add("hide");
 
     endScreen.classList.remove("hide");
 }
 
-
+//check answers
 function checkAnswer(selected_answer) {
     clickedQuestion = document.getElementById('question-text').innerHTML;
     if (clickedQuestion in clicked) {
@@ -93,7 +93,7 @@ function checkAnswer(selected_answer) {
     }, 1000);
 }
 
-
+//Save score to the local storage (credit to my friend Harshit)
 function saveScore(newScore) {
     localStorage.setItem('entry', JSON.stringify(newScore));
     let scoreList = JSON.parse(localStorage.getItem("highscore"));
@@ -108,7 +108,7 @@ function saveScore(newScore) {
     }
 }
 
-
+//Save the user's score when clicked
 submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     const playerName = document.getElementById('fullname').value.trim();
@@ -118,4 +118,4 @@ submitBtn.addEventListener('click', function (event) {
     };
     saveScore(newScore);
     window.open('scores.html');
-})
+});

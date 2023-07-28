@@ -1,3 +1,4 @@
+// credit to my friend Harshit
 const highscores = document.getElementById('highscores');
 // to retrieve the high scores from the local storage
 function getScores() {
