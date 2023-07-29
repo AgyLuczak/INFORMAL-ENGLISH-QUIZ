@@ -36,7 +36,7 @@ This is my second milestone project in which I added Java Script to make the web
 2. As a first-time visitor, I want to easily find instructions for the quiz.
 3. As a first-time and returning visitor, I want to be able to easily navigate the quiz. I can access all the pages easily and go back to the Home Page quickly. I also want to be able to quit the quiz if I feel like it.
 4. As a first-time and returning visitor, I want to know when the answer I chose is correct/ incorrect.
-5. As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices
+5. As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices.
 6. As a first-time and returning visitor, I want to be able to retake the quiz as many times as I want and learn the expressions I got wrong.
 7. As a first-time or returning visitor, I want to be able to save my score.
 
@@ -48,11 +48,11 @@ This is my second milestone project in which I added Java Script to make the web
 
 In order to achieve the strategy goals, the following features are included on the website:
 
-- A welcome message at the top of the Home Page stating clearly it is an Informal English Quiz
-- A hero image showing people chatting in a pub where people are likely to use Informal English
-- A favicon with Union Jack which is displayed next to the URL of the site in a browser's address bar to indicate that the quiz is about the English language
+- A welcome message at the top of the Home Page stating clearly it is an Informal English Quiz.
+- A hero image showing people chatting in a pub where people are likely to use Informal English.
+- A favicon with Union Jack which is displayed next to the URL of the site in a browser's address bar to indicate that the quiz is about the English language.
 - Navbar and buttons to navigate easily between the pages. Exit buttons allow  users to quit the quiz.
-- Instructions page which can be easily accessed through the navbar and the Instructions button
+- Instructions page which can be easily accessed through the navbar and the Instructions button.
 - Clear text and hero image which will be responsive on different devices. Right level of contrast between the text and the background.
 - Play again button if users want to do the quiz again. The questions and the order of the answers are shuffled to make the quiz more challenging.
 - Submit form at the end of the quiz where users can save their score after entering their name.
@@ -83,7 +83,7 @@ I used a Union Jack favicon in the address bar for every page to make it clear t
 The website looks slightly different from what I initially had in mind when creating the wireframes. 
 
 - I didn't include the leaderboard in the wireframes as I wasn't sure if I'll manage to include one.
-- I added more buttons for easier navigation
+- I added more buttons for easier navigation.
 
 </br>
 
@@ -144,9 +144,9 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 </br>
 
- - I'd like to use one HTML page and incorporate more Java Script to make certain sections pop up/ hide
+ - I'd like to use one HTML page and incorporate more Java Script to make certain sections pop up/ hide.
 
- - I'd like to increase the number of questions and create different levels of difficulty
+ - I'd like to increase the number of questions and create different levels of difficulty.
 
  - I'd like to add back-end language to implement a leaderboard that would save the score of users using different devices. Right now I've been only able to use the local storage.
 
@@ -158,7 +158,7 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style all the web content across the project. 
 
-- [JavaScript](https://www.javascript.com/) - Used for user interaction on the site
+- [JavaScript](https://www.javascript.com/) - Used for user interaction on the site.
 
 - [Bootstrap 5.3](https://getbootstrap.com/) - Used as the main framework to make the project responsive.
 
@@ -176,11 +176,11 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - [Balsamiq](https://balsamiq.com/) - Used to create the wireframes for the project.
 
-- [Befunky Photo Editor](https://befunky.com) - Used to resize and crop the images
+- [Befunky Photo Editor](https://befunky.com) - Used to resize and crop the images.
 
-- [Style generator](https://html-css-js.com/) - Used for colour gradient, text-shadow and box-shadow
+- [Style generator](https://html-css-js.com/) - Used for colour gradient, text-shadow and box-shadow.
 
-- [Favicon generator](https://www.favicon-generator.org/) - Used to generate a Union Jack favicon
+- [Favicon generator](https://www.favicon-generator.org/) - Used to generate a Union Jack favicon.
 
 - [AmIResponsive](http://ami.responsivedesign.is/) - Used to generate a responsive image of the website used in the README file.
 
@@ -434,7 +434,6 @@ I deployed this website by using GitPages and followed these steps:
 
 **Deploying a GitHub Repository via GitHub Pages** 
 
-</br>
 
 1. Log in to GitHub
 2. In your Repository section, select the repository you want to deploy
@@ -450,7 +449,6 @@ I deployed this website by using GitPages and followed these steps:
 
 If you want to make changes to your repository without affecting it, you can make a copy of it by 'Forking' it.
 
-</br>
 
 1. Find the GitHub repository
 2. In the top right corner of the page, click the *Fork* button 
