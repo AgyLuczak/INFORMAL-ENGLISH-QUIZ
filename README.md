@@ -26,7 +26,7 @@ This is my second milestone project in which I added Java Script to make the web
 1. To check students knowledge of some common informal expressions in English.
 2. To help students of English learn these expressions by providing an option of retaking the quiz as many times as they want.
 3. To promote knowledge of informal English, as it's rarely taught in language schools.
-4. To make the quiz fun and enjoyable so that students are willing to take it more than once.
+4. To make the quiz fun and enjoyable so that users are willing to take it more than once.
 
 </br>
 
@@ -37,7 +37,7 @@ This is my second milestone project in which I added Java Script to make the web
 3. As a first-time and returning visitor, I want to be able to easily navigate the quiz. I can access all the pages easily and go back to the Home Page quickly. I also want to be able to quit the quiz if I feel like it.
 4. As a first-time and returning visitor, I want to know when the answer I chose is correct/ incorrect.
 5. As a first-time and returning visitor, I want to be able to read the text easily and see all images clearly on different devices
-6. As a first-time and returning visitor, I want to be able to retake the quiz as many times I want to to learn the expressions I got wrong.
+6. As a first-time and returning visitor, I want to be able to retake the quiz as many times as I want and learn the expressions I got wrong.
 7. As a first-time or returning visitor, I want to be able to save my score.
 
 </br>
@@ -47,13 +47,14 @@ This is my second milestone project in which I added Java Script to make the web
 </br>
 
 In order to achieve the strategy goals, the following features are included on the website:
-- A welcome message at the top of the Home Page stating clearly it is Informal English Quiz
+
+- A welcome message at the top of the Home Page stating clearly it is an Informal English Quiz
 - A hero image showing people chatting in a pub where people are likely to use Informal English
 - A favicon with Union Jack which is displayed next to the URL of the site in a browser's address bar to indicate that the quiz is about the English language
-- Navbar and buttons to navigate easily between the pages. Exit buttons allowing the user to quit the quiz.
+- Navbar and buttons to navigate easily between the pages. Exit buttons allow  users to quit the quiz.
 - Instructions page which can be easily accessed through the navbar and the Instructions button
 - Clear text and hero image which will be responsive on different devices. Right level of contrast between the text and the background.
-- Play again button if the user wants to do the quiz again. The questions and the order of the answers are be shuffled to make the quiz more challenging.
+- Play again button if users want to do the quiz again. The questions and the order of the answers are shuffled to make the quiz more challenging.
 - Submit form at the end of the quiz where users can save their score after entering their name.
 
 </br>
@@ -69,7 +70,7 @@ The website consists of four pages:
 - **Scores**
 
 The navbar recurring on each page allows users to easily move between the pages and go back to Home Page quickly. I also used buttons to link the pages and make navigation of the website even easier. The exit button is used as well if a user wants to quit the quiz.
-I used a Union Jack favicon in the address bar for every page to make it clear to the user they are still on the same website.  I used the same background colours for different sections on each page to create a certain design pattern for the website. The Home Page contains a short welcome message, a hero image and button links to Instructions page and Quiz page. The Quiz Page contains a head-up display with questions and score counter. Below it there is a question container and four answer containers that can be clicked on. At the end of the quiz users will be taken to the scores page where they can save their score by entering their name. When the submit button is hit, the form will be hidden and the leaderboard will appear. Users will have a chance to retake the quiz or quit it by pressing the appropriate button. I also added a **404 error** page that directs users to home page in case there is a problem with a link.
+I used a Union Jack favicon in the address bar for every page to make it clear to users that they are still on the same website.  I used the same background colours for different sections on each page to create a certain design pattern for the website. The Home Page contains a short welcome message, a hero image and button links to Instructions page and Quiz page. The Quiz Page contains a head-up display with questions and score counter. Below it there is a question container and four answer containers that can be clicked on. At the end of the quiz users will be taken to the scores page where they can save their score by entering their name. When the submit button is hit, the form will be hidden and the leaderboard will appear. Users will have a chance to retake the quiz or quit it by pressing the appropriate button. I also added a **404 Error Page** that directs users to the Home Page in case there is a problem with a link.
 
 </br>
 
@@ -90,7 +91,7 @@ The website looks slightly different from what I initially had in mind when crea
 
 </br>
 
-I used Google fonts: 'Signika' for all the text in the quiz. It's very clear and easy to read. I used 3 colours for the text: wheat and white and dark purple for the answer containers. I wanted to make sure that there is enough contrast between the text and the backgound colour. The headings and the navbar links have a purple text shadow to add more interesting styling. Whenever the text is more dense (e.g. in the Instructions section), I used containers with a different backround colour to create stronger contrast between the text and the background.
+I used Google fonts: 'Signika' for all the text in the quiz. It's very clear and easy to read. I used 3 colours for the text: wheat and white and dark purple for the answer containers. I wanted to make sure that there is enough contrast between the text and the background colour. The headings and the navbar links have a purple text shadow to add more interesting styling. Whenever the text is more dense (e.g. in the Instructions section), I used containers with a different backround colour to create stronger contrast between the text and the background.
 
 I chose two background colours for the backround across the whole webiste: colour gradient generated by mixing 2 shades of purple and pink as the body background image and a darker colour of blue with a hint of purple as a backround colour for the sections with text and buttons. All buttons have a blue background colour and a white text to make them stand out on the page. 
 
@@ -110,11 +111,11 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 ![navbar](./docs/navbar.png)
 
 
-- **Buttons** – Another feature recurring on each page which helps users with navigation. The buttons can be used to start and quit the quiz, direct users to instructions and score pages and also go back to the Home Page from an error page. After finishing the quiz, users can use the submit button to save their score. When hovered upon, the colour of the buttons becomes darker and a box shadow appears.
+- **Buttons** – Another feature recurring on each page which helps users with navigation. The buttons can be used to start and quit the quiz, direct users to Instructions and Score Pages, and also go back to the Home Page from an Error Page. After finishing the quiz, users can use the submit button to save their score. When hovered upon, the colour of the buttons becomes darker and a box shadow appears.
 
 ![buttons](./docs/buttons.png)
 
-- **Home Page**  Cointains a welcome message: 'Welcome to Informal English' which makes the purpose of the website clear for users. The page contains a hero image showing people chatting in a pub to link the Informal style of English with the environment where it's likely to be used. Below the hero image there is a container with a message inviting users to take the quiz to test their knowledge of Informal English. There are two buttons under the message: one directs users to the Instructions Page and the other one starts the quiz.
+- **Home Page** - Cointains a welcome message: 'Welcome to Informal English' which makes the purpose of the website clear for users. The page contains a hero image showing people chatting in a pub to link the Informal style of English with the environment where it's likely to be used. Below the hero image there is a container with a message inviting users to take the quiz to test their knowledge of Informal English. There are two buttons under the message: one directs users to the Instructions Page and the other one starts the quiz.
 
 ![quiz entry](./docs/quiz_entry.png)
 
@@ -129,7 +130,7 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - **Score Page** shows recent scores. It uses local storage. It also contains two buttons: Play Again (which takes users to the start of the quiz) and Exit (which takes users back to the Home Page).
 
-- **404 error page** This page helps users go back to the Home Page if anything goes wrong.
+- **404 Error Page** This page helps users go back to the Home Page if anything goes wrong.
 
 ![error](./docs/error_page.png)
 
@@ -155,7 +156,7 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used as the basic building block for the project and to structure the content.
 
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)- Used to style all the web content across the project. 
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style all the web content across the project. 
 
 - [JavaScript](https://www.javascript.com/) - Used for user interaction on the site
 
@@ -165,13 +166,13 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - [Google Fonts](https://fonts.google.com/) - Used to obtain the fonts used in the project.
 
-- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - Used as a primary method of fixing spacing issues, finding bugs, console errors and testing responsiveness across the project.
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - Used as a primary method of fixing spacing issues, finding bugs, console errors, and testing responsiveness across the project.
 
 - [Github](https://github.com/) - Used to store code for the project after being pushed.
 
 - [Git](https://git-scm.com/) - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-- [Gitpod](https://www.gitpod.io/) - Used as the development enviroment.
+- [Gitpod](https://www.gitpod.io/) - Used as the development environment.
 
 - [Balsamiq](https://balsamiq.com/) - Used to create the wireframes for the project.
 
@@ -185,13 +186,15 @@ I wanted all the colours to go together nicely, but also offer enough variety so
 
 - [Readme.so](https://readme.so) - Used to edit the readme file.
 
--  [Tables generator](https://www.tablesgenerator.com/) - Used to create a table in readme file.
+- [Tables generator](https://www.tablesgenerator.com/) - Used to create a table in readme file.
 
 - [W3C Markup Validation Service](https://validator.w3.org/) - Used to validate all HTML code written and used in this webpage.
 
-- [JS Validation Service](https://https://jshint.com/) - Used to validate all CSS code written and used in this webpage.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to validate all CSS code written and used in this webpage.
 
-- [ChatGPT4](https://chat.openai.com/) - Used to analyze the code from various youtube tutorials for better understanding of the code. Also used along StackOverflow to ask for possible causes of issues I came across while doing the project.
+- [JSHint](https://https://jshint.com/) - Used to validate all JS code written and used in this webpage.
+
+- [ChatGPT4](https://chat.openai.com/) - Used to analyze the code from various youtube tutorials for a better understanding of the code. Also used along StackOverflow to ask for possible causes of issues I came across while doing the project.
 
 </br>
 
@@ -225,7 +228,7 @@ To perform an automated test efficiently, you need three pieces: an isolated tes
 
 **Performance Testing** - Its aim is to measure response time of a system or an application. Most testers prefer automated tests, as they offer accurate results with minimal human intervention.
 
-**Load Testing** - This type of testing simulates a heavy load on the website. This way developers can identify weaknesses in the system
+**Load Testing** - This type of testing simulates a heavy load on the website. This way developers can identify weaknesses in the system.
 With this type of test, the idea is to simulate a heavy load on the website, which helps developers identify weaknesses in the system and make adjustments. Only automated tests can provide such simulations effectively.
 
 </br>
@@ -345,7 +348,7 @@ I used W3C CSS Validator for the CSS and it showed 'no errors'.
 - [JSHint](https://jshint.com/)
 
 I used JSHint - a code analysis tool for Java Script.
-JSHint kept showing me unused variables. A lot of these variables are used in the HTML pages. I went through the js code to remove all the unused variables.
+JSHint kept showing me unused variables. A lot of these variables are used in the HTML pages. I went through the JS code to remove all the unused variables.
 
 ![JSHint](./docs/JSHint.png)
 
@@ -417,7 +420,7 @@ Here are the results:
 9. **Unexpected token error**
 ![unexpected token issue](./docs/unexpected_token.png)
 
-- ***Solution:*** Removed the links to script.js from html pages where the logic was not applied
+- ***Solution:*** Removed the links to script.js from HTML pages where the logic was not applied
 
 A lot of issues were caused by incorrect syntax, missing brackets or forgetting to call the function
 
@@ -429,12 +432,12 @@ I deployed this website by using GitPages and followed these steps:
 
 </br>
 
-**Deploying a GitHub Repoitory via GitHub Pages** 
+**Deploying a GitHub Repository via GitHub Pages** 
 
 </br>
 
 1. Log in to GitHub
-2. In your Repository section, select repository you want to deploy
+2. In your Repository section, select the repository you want to deploy
 3. In the menu located at the top of this section, click *settings*
 4. Select *Pages* on the left-hand menu.
 5. In the *Source* section select *deploy from a branch*
@@ -476,15 +479,15 @@ If you want to download a local version of the repository, you can clone it.
 
 - [W3Schools](https://www.w3schools.com/) - general source of reference
 
-
 - [Mozilla Javascript Reference](https://developer.mozilla.org/) - general source of reference
-
 
 - [Stackoverflow](https://stackoverflow.com/) - suggestions for solutions for various problems while doing the project
 
 - [Code with Ania Kubow](https://www.youtube.com/@AniaKubow) - a lot of great videos explaining different concepts of JS
 
-- [Brian Design](https://www.youtube.com/@briandesign) and [James Quick](https://www.youtube.com/@JamesQQuick) - I watched their tutorials on creating a quiz in JavaScript to get a better understanding of all tge necessary steps in building it. I used some of their ideas in my HTML and CSS.
+- [Brian Design](https://www.youtube.com/@briandesign) and [James Quick](https://www.youtube.com/@JamesQQuick) - I watched their tutorials on creating a quiz in JavaScript to get a better understanding of all necessary steps in building it. I used some of their ideas in my HTML and CSS.
+
+- [Waldo blogs](https://www.waldo.com/) - a source of information for manual and automated testing
 
  - My friend Harshit - help with the end of the quiz and creating a leaderboard as well as with shuffling the questions and answers in the quiz
 
@@ -511,7 +514,7 @@ I would like to say a massive thank you to:
 
  - my friend Harshit for his guidance and support during the project
  
- - my classmates Adam and Jacob for the valuable feedback 
+ - my classmates Adam and Jacob for their valuable feedback 
 
  - my husband Gniewomir for his incredible support since the beginning of the course.
 
